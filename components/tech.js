@@ -6,7 +6,7 @@ const Tech = (props) => {
 		<h2 className={styles.show}>
 		{props.title}
 		</h2>
-		<span className={styles.con}
+		<span className={styles.con}>
 		<div className={styles.techs}>
           <img className={styles.tech} src="/dev/html.png" alt="html" />
           <img className={styles.tech} src="/dev/js.png" alt="js" />
