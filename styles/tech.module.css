@@ -1,0 +1,15 @@
+
+.techs {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tech {
+	margin: 3px;
+	max-width: 100px;
+}
+
+.show {
+	border-bottom: 2px dotted red;
+}

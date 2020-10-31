@@ -1,0 +1,31 @@
+{
+  "name": "josias-site",
+  "version": "1.0.0",
+  "description": "The official website and blog of Josias Aurel",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "Blog",
+    "website",
+    "presentation"
+  ],
+  "author": "Josias Aurel",
+  "license": "ISC",
+  "dependencies": {
+    "@geist-ui/style": "^2.0.0",
+    "gray-matter": "^4.0.2",
+    "highlight.js": "^10.3.1",
+    "marked": "^1.2.2",
+    "next": "^10.0.0",
+    "raw-loader": "^4.0.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-markdown": "^5.0.2",
+    "react-syntax-highlighter": "^15.2.1"
+  }
+}
