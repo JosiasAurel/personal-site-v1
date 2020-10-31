@@ -7,6 +7,7 @@ class JADocument extends Document {
 				<Head>
 				 <meta name="theme-color" content="#0dfde9" />
                   <link rel="stylesheet" href="/style.css" />
+					<link rel="shortcut icon" href="/josias-logo.ico" />					    
 				</Head>
 				<body>
 				<Main />
