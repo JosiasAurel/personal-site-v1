@@ -13,3 +13,8 @@
 .show {
 	border-bottom: 2px dotted red;
 }
+
+.con {
+	display: flex;
+	justify-content: center;
+}
