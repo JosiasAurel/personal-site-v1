@@ -18,8 +18,8 @@ pre {
 
 
 
-h1, h2, h3, h4, h5, h6, p {
-	text-align: justify;
+h1, h2, h3, h4, h5, h6,  {
+	text-align: center;
 	margin: 20px;
 }
 
@@ -29,6 +29,7 @@ h2 {
 }
 
 p {
+	text-align: justify;
 	font-size: 18px;
 	font-weight: 20px;
 	margin: 20px;
