@@ -29,3 +29,10 @@
 .c {
 	border-botton: 2px dotted green;
 }
+
+
+.git {
+	text-decoration: none;
+	color: grey;
+	border-bottom: 1px dotted green;
+}

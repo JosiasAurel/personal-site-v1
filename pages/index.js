@@ -27,8 +27,7 @@ const Home = () => {
 			 target="https://cropboard.vercel.app"
 			 />
 
-			 <h4> Find More on GitHub </h4>
-
+			 <h4> Find More on <a href="https://github.com/JosiasAurel?tab=repositories" className={styles.git}>GitHub</a> </h4>
 			 <div className={styles.footer}>
 			<a href="https://github.com/JosiasAurel"><img src="/github.png" alt="github" className={styles.social} /></a>		 
 			<a href="mailto:%20ndjosiasaurel@gmail.com"><img src="/gmail.png" alt="github" className={styles.social} /></a>		 
