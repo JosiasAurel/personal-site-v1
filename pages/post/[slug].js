@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import PostTitle from '../../components/postTitle'
 import styles from '../../styles/postPage.module.css'
 import Link from 'next/link'
+import Post from '../../components/post'
 
 export default function PostTemplate({content, data}) {
     const frontmatter = data
@@ -20,10 +21,16 @@ export default function PostTemplate({content, data}) {
               title={frontmatter.title}
               date="@JosiasWing"
           />
+
+          <Post>
          <ReactMarkdown
             source={content}
             renderers={{code: CodeBlock}}
           />
+
+          </Post>
+
+          <h2 className={styles.c}> © 2020 Josias Aurel </h2>
          </div>
         )
 }

@@ -16,9 +16,13 @@ pre {
 	margin: 15px;
 }
 
+
+
 h1, h2, h3, h4, h5, h6, p {
-	text-align: center;
+	text-align: justify;
+	margin: 20px;
 }
+
 
 h2 {
 	font-size: 24px;
@@ -27,5 +31,25 @@ h2 {
 p {
 	font-size: 18px;
 	font-weight: 20px;
-	margin: 5px;
+	margin: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #0cb6fe;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: blue;
+  color: blue;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: blue;
+}
+
+::-webkit-scrollbar-thumb {
+  color: blue;
 }
