@@ -18,3 +18,12 @@
 .c {
 	text-align: center;
 }
+
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.social {
+	max-width: 20px;
+}
