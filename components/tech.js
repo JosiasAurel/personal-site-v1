@@ -17,6 +17,9 @@ const Tech = (props) => {
           <img className={styles.tech} src="/dev/django.png" alt="django" />
           <img className={styles.tech} src="/dev/react.png" alt="react" />
           <img className={styles.tech} src="/dev/flask.png" alt="flask" />
+          <img className={styles.tech} src="/dev/graphql.png" alt="graphql" />
+          <img className={styles.tech} src="/dev/git.png" alt="git" />
+          <img className={styles.tech} src="/dev/ts.png" alt="typescript" />
 		</div>
 		</span>
 		</div>
