@@ -2,12 +2,14 @@ import styles from '../styles/home.module.css'
 import Tech from '../components/tech'
 import ProjectCard from '../components/projectCard'
 import Link from 'next/link'
+import React, {useState} from 'react'
 
 const Home = () => {
+	const  [Mode, setMode] = useState("light");
 	return (
-		<div>
+		<div className={ "light" ? styles.homeLightBody : styles.homeDarkBody }>
 			<header className={styles.header}>
-				<h2>JA</h2>
+				<h2 className={styles.name}>JA</h2>
 
 				<span className={styles.headerLinks}>
 					<Link href="/blog">
@@ -22,9 +24,10 @@ const Home = () => {
 					<a >About</a>
 					</Link>
 				</span>
+
 			</header>
 		<span className={styles.imgc}>
-		 <img className={styles.logo} src="/josias-logo.png" alt="josias-logo" />
+		 <img className={styles.logo} src="/josias-profile.png" alt="josias-logo" />
 </span>
 		 <h2 className={styles.pre}>
 		 Hi, I'm Josias Aurel
