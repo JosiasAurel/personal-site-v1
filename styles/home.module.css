@@ -3,6 +3,11 @@
   color: white;
 }
 
+.body {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
 .homeDarkBody {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -35,7 +40,7 @@
 }
 
 .c {
-  border-botton: 2px dotted green;
+  border-bottom: 2px dotted green;
 }
 
 .git {
