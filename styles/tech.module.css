@@ -1,20 +1,33 @@
-
 .techs {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .tech {
-	margin: 10px;
-	max-width: 100px;
+  margin: 5%;
+  max-width: 1em;
+  height: 1em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+}
+
+.tech:hover {
+  animation: card-climb 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-climb {
+  to {
+    box-shadow: 0 0 1px 1px rgba(10, 10, 10, 0.212);
+  }
 }
 
 .show {
-	border-bottom: 2px dotted red;
+  border-bottom: 2px dotted red;
 }
 
 .con {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -2%;
 }

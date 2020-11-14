@@ -1,29 +1,36 @@
-
 .header {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 10%;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .item {
-	margin: 4px;
+  margin: 4px;
 }
 
 .home {
-	color: #0dfde9;
-	margin: 4px;
-	text-decoration: none;
-	font-size: 20px;
+  color: #0dfde9;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .c {
-	text-align: center;
+  text-align: center;
 }
 
 .footer {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social {
-	max-width: 20px;
+  max-width: 20px;
 }

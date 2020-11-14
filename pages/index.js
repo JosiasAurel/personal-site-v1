@@ -5,7 +5,7 @@ import ProjectCard from '../components/projectCard'
 const Home = () => {
 	return (
 		<div>
-		<h1 className={styles.name}> JA </h1>
+					<h1 className={styles.name}> JA </h1>
 		<span className={styles.imgc}>
 		 <img className={styles.logo} src="/josias-logo.png" alt="josias-logo" />
 </span>
@@ -15,7 +15,6 @@ const Home = () => {
 		  </h2>
 
 		  <Tech 
-		  title="I am comfortable with the following technologies"
 			/>
 
 			<h2> Projects I work On </h2>

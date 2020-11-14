@@ -1,23 +1,22 @@
-
-
 .link {
-	text-decoration: none;
-	color: grey;
-	border-bottom: 2px dotted #0dfde9;
+  text-decoration: none;
+  color: grey;
+  border-bottom: 2px dotted #0dfde9;
 }
 
 .logo {
-	max-width: 100px;
+  max-width: 10%;
 }
 
 .imgc {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-	padding: 8px;
-	margin: 8px;
-	border-radius: 8px;
-	box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 10%;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
 }

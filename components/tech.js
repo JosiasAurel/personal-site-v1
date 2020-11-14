@@ -2,10 +2,7 @@ import styles from '../styles/tech.module.css'
 
 const Tech = (props) => {
 	return (
-		<div>
-		<h2 className={styles.show}>
-		{props.title}
-		</h2>
+		<React.Fragment>
 		<span className={styles.con}>
 		<div className={styles.techs}>
           <img className={styles.tech} src="/dev/html.png" alt="html" />
@@ -22,7 +19,7 @@ const Tech = (props) => {
           <img className={styles.tech} src="/dev/ts.png" alt="typescript" />
 		</div>
 		</span>
-		</div>
+		</React.Fragment>
 	)
 }
 

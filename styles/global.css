@@ -1,43 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-	margin: 0;
-	font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 code {
-	border: solid;
-	border-radius: 5px;
-	border-color: transparent;
-	margin: 8px;
+  border: solid;
+  border-radius: 5px;
+  border-color: transparent;
+  margin: 8px;
 }
 
 pre {
-	margin: 15px;
+  margin: 15px;
 }
 
-
-
-h1, h2, h3, h4, h5, h6,  {
-	text-align: center;
-	margin: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin: 20px;
 }
-
 
 h2 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 p {
-	text-align: justify;
-	font-size: 18px;
-	font-weight: 20px;
-	margin: 20px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 20px;
+  margin: 20px;
 }
 
 a {
-	text-decoration: none;
-	color: #0cb6fe;
+  text-decoration: none;
+  color: #0cb6fe;
 }
 
 ::-webkit-scrollbar {

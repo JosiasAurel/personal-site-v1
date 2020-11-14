@@ -1,31 +1,33 @@
-.card , .about {
-	display: flex;
-	justify-content: space-evenly;
+.card,
+.about {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-	margin: 8px;
-	flex-direction: column;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
-	padding: 10px;
-	border-radius: 6px;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 1%;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .about {
-	flex-direction: row;
+  flex-direction: row;
 }
 
 .title {
-	text-align: center;
+  text-align: center;
 }
 
 .profile {
-    max-width: 60px;
-	height: auto;
+  max-width: 10%;
+  height: auto;
 }
 
 .him {
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }

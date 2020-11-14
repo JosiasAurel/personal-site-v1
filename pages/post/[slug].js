@@ -17,7 +17,7 @@ export default function PostTemplate({content, data}) {
          </Link>
          <h3 className={styles.item}> Hi </h3>
          </div>
-         <PostTitle 
+         <PostTitle
               title={frontmatter.title}
               date="@JosiasWing"
           />
