@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 import ColorMode from '../components/ColorMode'
 import styles from "../styles/projects.module.css"
 import ProjectCard from "../components/projectCard"
