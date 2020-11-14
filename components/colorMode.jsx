@@ -1,14 +1,21 @@
 import React, {useState} from 'react'
-import styles from '../styles/colortoggle.module.css'
+import styles from "../styles/colortoggle.module.css"
 
-const colorMode = () => {
-    const [Color, setColor] = useState("Light")
+const ColorMode = () => {
+    const [color, setColor] = useState("Light");
 
+    function toggleColor() {
+        if (color === "Light") {
+            setColor("Dark")
+        } else {
+            setColor("Light")
+        }
+    }
     return (
-        <button onClick={Color === "Light" ? setColor("Dark") : setColor("Light")} className={styles.button}>
-                {Color}
+        <button onClick={() => toggleColor()} className={styles.button}>
+            {color}
         </button>
     )
 }
 
-export default colorMode
+export default ColorMode

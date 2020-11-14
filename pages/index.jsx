@@ -3,13 +3,13 @@ import Tech from '../components/tech'
 import ProjectCard from '../components/projectCard'
 import Link from 'next/link'
 import React, {useState} from 'react'
-import colorMode from "../components/colorMode"
+import ColorMode from '../components/ColorMode'
 
 const Home = () => {
 	const  [Mode, setMode] = useState("light");
 	return (
 		<div className={styles.body}>
-		<div className={ "light" ? styles.homeLightBody : styles.homeDarkBody }>
+		<div className={ Mode === "light" ? styles.homeLightBody : styles.homeDarkBody }>
 			<header className={styles.header}>
 				<h2 className={styles.name}>JA</h2>
 
@@ -26,7 +26,7 @@ const Home = () => {
 					<a >About</a>
 					</Link>
 				</span>
-				<colorMode />
+				<ColorMode/>
 			</header>
 		<span className={styles.imgc}>
 		 <img className={styles.logo} src="/josias-profile.png" alt="josias-logo" />
