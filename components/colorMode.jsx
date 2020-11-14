@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from "../styles/colortoggle.module.css"
 
 const ColorMode = ({value, onClick}) => {
