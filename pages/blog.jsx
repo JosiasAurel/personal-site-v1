@@ -1,10 +1,11 @@
 import React from 'react'
 import PostCard from '../components/postCard'
 import styles from '../styles/posts.module.css'
+import Link from 'next/link'
 const Posts = () => {
     return (
     <>
-    		<h1 className={styles.name}> JA </h1>
+    		<h1 className={styles.name}> <Link href="/"><a>JA</a></Link> </h1>
         <h2>
             Welcome to the posts page
         </h2>

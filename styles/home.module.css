@@ -35,3 +35,18 @@
   color: grey;
   border-bottom: 1px dotted green;
 }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks > a {
+  margin: 0.5em;
+  color: rgb(0, 0, 29);
+}
