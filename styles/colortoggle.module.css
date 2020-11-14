@@ -11,3 +11,12 @@
 .button:focus {
   outline: none;
 }
+
+.homeLightBody {
+  background-color: #1a212c;
+  color: white;
+}
+
+.homeDarkBody {
+  font-family: "IBM Plex Mono", monospace;
+}

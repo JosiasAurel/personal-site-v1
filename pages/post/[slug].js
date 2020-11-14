@@ -1,22 +1,53 @@
 import matter from 'gray-matter'
-import React from 'react'
+import React, {useState} from 'react'
 import CodeBlock from '../../components/mdHandler'
 import ReactMarkdown from 'react-markdown'
 import PostTitle from '../../components/postTitle'
 import styles from '../../styles/postPage.module.css'
 import Link from 'next/link'
 import Post from '../../components/post'
+import ColorMode from '../../components/ColorMode'
 
 export default function PostTemplate({content, data}) {
-    const frontmatter = data
+
+    const frontmatter = data // Make frontmatter the data
+
+    const  [Mode, setMode] = useState("Light");
+	const [colorText, setColorText] = useState("Light")
+	function toggleColor() {
+        if (Mode === "Light") {
+			setMode("Dark")
+			setColorText("Dark")
+        } else if (Mode === "Dark") {
+			setMode("Light")
+            setColorText("Light")
+        }
+	}
+	
+
     return (
-         <div>
-         <div className={styles.header}>
-         <Link href="/">
-         <a className={styles.home}>JA</a>
-         </Link>
-         <h3 className={styles.item}> Hi </h3>
-         </div>
+         <div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
+         <header className={styles.header}>
+				<h2 className={styles.name}>JA</h2>
+
+				<span className={styles.headerLinks}>
+					<Link href="/blog">
+					<a >Blog</a>
+					</Link>
+
+					<Link href="/projects">
+					<a >Projects</a>
+					</Link>
+
+					<Link href="/about">
+					<a >About</a>
+					</Link>
+				</span>
+				<ColorMode
+					onClick={() => toggleColor()}
+					value={colorText}
+				/>
+			</header>
          <PostTitle
               title={frontmatter.title}
               date="@JosiasWing"

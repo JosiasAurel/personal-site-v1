@@ -18,3 +18,27 @@
 .c {
   border-botton: 2px dotted green;
 }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks > a {
+  margin: 0.5em;
+  color: rgb(0, 0, 253);
+}
+
+.homeLightBody {
+  background-color: #1a212c;
+  color: white;
+}
+
+.homeDarkBody {
+  font-family: "IBM Plex Mono", monospace;
+}

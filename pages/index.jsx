@@ -6,10 +6,21 @@ import React, {useState} from 'react'
 import ColorMode from '../components/ColorMode'
 
 const Home = () => {
-	const  [Mode, setMode] = useState("light");
+	const  [Mode, setMode] = useState("Light");
+	const [colorText, setColorText] = useState("Light")
+	function toggleColor() {
+        if (Mode === "Light") {
+			setMode("Dark")
+			setColorText("Dark")
+        } else if (Mode === "Dark") {
+			setMode("Light")
+            setColorText("Light")
+        }
+	}
+	
 	return (
 		<div className={styles.body}>
-		<div className={ Mode === "light" ? styles.homeLightBody : styles.homeDarkBody }>
+		<div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
 			<header className={styles.header}>
 				<h2 className={styles.name}>JA</h2>
 
@@ -26,7 +37,10 @@ const Home = () => {
 					<a >About</a>
 					</Link>
 				</span>
-				<ColorMode/>
+				<ColorMode
+					onClick={() => toggleColor()}
+					value={colorText}
+				/>
 			</header>
 		<span className={styles.imgc}>
 		 <img className={styles.logo} src="/josias-profile.png" alt="josias-logo" />

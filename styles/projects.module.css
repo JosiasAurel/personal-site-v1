@@ -1,19 +1,11 @@
-.homeDarkBody {
-  font-family: "IBM Plex Mono", monospace;
-}
-
 .homeLightBody {
   background-color: #1a212c;
   color: white;
 }
 
-.con {
-  margin: 8px;
-  border: solid;
-  border-color: rgba(124, 124, 126, 0.2);
-  border-radius: 6px;
+.homeDarkBody {
+  font-family: "IBM Plex Mono", monospace;
 }
-
 .header {
   display: flex;
   justify-content: space-evenly;

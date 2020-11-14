@@ -3,12 +3,12 @@
   color: white;
 }
 
-.body {
-  margin: 0;
+.homeDarkBody {
   font-family: "IBM Plex Mono", monospace;
 }
 
-.homeDarkBody {
+.body {
+  margin: 0;
   font-family: "IBM Plex Mono", monospace;
 }
 .name {
@@ -61,5 +61,5 @@
 
 .headerLinks > a {
   margin: 0.5em;
-  color: rgb(0, 0, 29);
+  color: rgb(0, 0, 253);
 }

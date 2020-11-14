@@ -1,19 +1,10 @@
 import React, {useState} from 'react'
 import styles from "../styles/colortoggle.module.css"
 
-const ColorMode = () => {
-    const [color, setColor] = useState("Light");
-
-    function toggleColor() {
-        if (color === "Light") {
-            setColor("Dark")
-        } else {
-            setColor("Light")
-        }
-    }
+const ColorMode = ({value, onClick}) => {
     return (
-        <button onClick={() => toggleColor()} className={styles.button}>
-            {color}
+        <button className={styles.button} onClick={onClick}>
+            {value}
         </button>
     )
 }
