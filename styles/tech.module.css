@@ -5,7 +5,7 @@
 
 .tech {
   margin: 5%;
-  max-width: 1em;
+  max-width: 2em;
   height: 1em;
   background-color: rgb(255, 255, 255);
   border-radius: 5%;
@@ -30,4 +30,24 @@
   display: flex;
   justify-content: center;
   margin-top: -2%;
+}
+
+@media screen and (max-width: 480px) {
+  .tech {
+    margin: 5%;
+    max-width: 0.8em;
+    height: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tech {
+    margin: 5%;
+    max-width: 0.7em;
+    height: 0.7em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+  }
 }

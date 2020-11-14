@@ -10,7 +10,7 @@ const PostTitle = (props) => {
 
 		  <span className={styles.about}>
 		    <span className={styles.him}>
-		     <img src="/josias-profile.png" className={styles.profile} alt="profile" />
+		     <img src="/josias-logo.png" className={styles.profile} alt="profile" />
 		   </span>
 		     <h4>{props.date} </h4>
 		  </span>

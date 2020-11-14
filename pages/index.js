@@ -5,13 +5,11 @@ import ProjectCard from '../components/projectCard'
 const Home = () => {
 	return (
 		<div>
-					<h1 className={styles.name}> JA </h1>
 		<span className={styles.imgc}>
 		 <img className={styles.logo} src="/josias-logo.png" alt="josias-logo" />
 </span>
 		 <h2 className={styles.pre}>
-		 Hi, I am Josias Aurel, 15 years old self-taught developer.
-		 I am passionate about Web Development, Game Development and AI.
+		 Hi, I'm Josias Aurel
 		  </h2>
 
 		  <Tech 
