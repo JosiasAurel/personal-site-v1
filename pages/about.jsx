@@ -54,7 +54,7 @@ const About = () => {
                 <div>
                     <h3> My Technology Stack is :</h3>
                     <div className={styles.stack}>
-                    <ul>
+                    <ul className={styles.tech}>
                         <li><a className={styles.lang}>Django</a></li>
                         <li><a className={styles.lang}>Flask</a></li>
                         <li><a className={styles.lang}>NextJS</a></li>
@@ -63,6 +63,8 @@ const About = () => {
                         <li><a className={styles.lang}>FastAPI</a></li>
                         <li><a className={styles.lang}>SQLite</a></li>
                         <li><a className={styles.lang}>MongoDB</a></li>
+                        <li><a className={styles.lang}>APIs and JAMStack</a></li>
+                        <li><a className={styles.lang}>SCripting</a></li>
                     </ul>
                     </div>
                 </div>
