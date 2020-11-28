@@ -21,8 +21,9 @@ const Posts = () => {
 <>
 <div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
 <header className={styles.header}>
-				<h2 className={styles.name}>JA</h2>
-
+<Link href="/">
+				<a><h2 className={styles.name}>JA</h2></a>
+				</Link>
 				<span className={styles.headerLinks}>
 					<Link href="/blog">
 					<a >Blog</a>
