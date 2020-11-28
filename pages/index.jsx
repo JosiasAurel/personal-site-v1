@@ -6,8 +6,8 @@ import React, {useState} from 'react'
 import ColorMode from '../components/ColorMode'
 
 const Home = () => {
-	const  [Mode, setMode] = useState("Light");
-	const [colorText, setColorText] = useState("Light")
+	const  [Mode, setMode] = useState("Dark");
+	const [colorText, setColorText] = useState("Dark")
 	function toggleColor() {
         if (Mode === "Light") {
 			setMode("Dark")

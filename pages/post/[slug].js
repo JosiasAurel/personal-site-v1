@@ -12,8 +12,8 @@ export default function PostTemplate({content, data}) {
 
     const frontmatter = data // Make frontmatter the data
 
-    const  [Mode, setMode] = useState("Light");
-	const [colorText, setColorText] = useState("Light")
+    const  [Mode, setMode] = useState("Dark");
+	const [colorText, setColorText] = useState("Dark")
 	function toggleColor() {
         if (Mode === "Light") {
 			setMode("Dark")

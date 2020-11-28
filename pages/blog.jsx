@@ -6,8 +6,8 @@ import ColorMode from '../components/ColorMode'
 
 
 const Posts = () => {
-    const  [Mode, setMode] = useState("Light");
-	const [colorText, setColorText] = useState("Light")
+    const  [Mode, setMode] = useState("Dark");
+	const [colorText, setColorText] = useState("Dark")
 	function toggleColor() {
         if (Mode === "Light") {
 			setMode("Dark")
@@ -19,6 +19,7 @@ const Posts = () => {
 	}
     return (
 <>
+<div>
 <div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
 <header className={styles.header}>
 <Link href="/">
@@ -48,18 +49,19 @@ const Posts = () => {
         </h2>
 
         <div>
-            <PostCard postName="Hello World in Brainf****" />
+			<PostCard postName="Install VSCode on Android"
+			          link="/post/install-vscode-on-android" />
+			<PostCard postName="Handle Browser Load events in JavaScript"
+			          link="/post/install-vscode-on-android" />
         </div>
 
-			 <div className={styles.footer}>
-			<a href="https://github.com/JosiasAurel"><img src="/github.png" alt="github" className={styles.social} /></a>		 
-			<a href="mailto:%20ndjosiasaurel@gmail.com"><img src="/gmail.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://twitter.com/JosiasWing?s=09"><img src="/twitter.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://josiasaurel.itch.io/"><img src="/itchio.png" alt="github" className={styles.social} /></a>		 
-			</div>
+			 
+            
 
 			<h2 className={styles.c}> © 2020 Josias Aurel </h2>
-            </div>
+			</div>
+			
+			</div>
         </>
     )
 }

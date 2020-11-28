@@ -4,8 +4,8 @@ import styles from "../styles/about.module.css"
 import ColorMode from '../components/ColorMode'
 
 const About = () => {
-    const  [Mode, setMode] = useState("Light");
-	const [colorText, setColorText] = useState("Light")
+    const  [Mode, setMode] = useState("Dark");
+	const [colorText, setColorText] = useState("Dark")
 	function toggleColor() {
         if (Mode === "Light") {
 			setMode("Dark")
@@ -40,6 +40,33 @@ const About = () => {
 					value={colorText}
 				/>
 			</header>
+
+            <div>
+                <h2>
+                    Hi i am Josias Aurel
+                </h2>
+
+                <p>
+                    I am a self-taught software developer. I can code in <a className={styles.lang}>Python</a>, <a className={styles.lang}>Java</a> and <a className={styles.lang}>JavaScript</a>.
+                    
+                </p>
+
+                <div>
+                    <h3> My Technology Stack is :</h3>
+                    <div className={styles.stack}>
+                    <ul>
+                        <li><a className={styles.lang}>Django</a></li>
+                        <li><a className={styles.lang}>Flask</a></li>
+                        <li><a className={styles.lang}>NextJS</a></li>
+                        <li><a className={styles.lang}>ReactJS</a></li>
+                        <li><a className={styles.lang}>NodeJS</a></li>
+                        <li><a className={styles.lang}>FastAPI</a></li>
+                        <li><a className={styles.lang}>SQLite</a></li>
+                        <li><a className={styles.lang}>MongoDB</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
             </div>
             </>
     )

@@ -9,6 +9,7 @@
   bottom: 0;
   height: 2.5em;
   width: 100%;
+  margin-top: 10%;
 }
 
 .social {
@@ -16,7 +17,7 @@
 }
 
 .c {
-  border-botton: 2px dotted green;
+  border-bottom: 2px dotted green;
 }
 
 .header {

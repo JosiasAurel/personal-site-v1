@@ -5,8 +5,8 @@ import styles from "../styles/projects.module.css"
 import ProjectCard from "../components/projectCard"
 
 const Projects = () => {
-    const  [Mode, setMode] = useState("Light");
-	const [colorText, setColorText] = useState("Light")
+    const  [Mode, setMode] = useState("Dark");
+	const [colorText, setColorText] = useState("Dark")
 	function toggleColor() {
         if (Mode === "Light") {
 			setMode("Dark")
