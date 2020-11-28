@@ -84,9 +84,30 @@ const About = () => {
                     </div>
                 </div>
 
-                
+                <div>
+                    <p>
+                        I learn some new things everyday and i am open to learning more. I am interested in Game Developent, App Development and making Open Source Contributions.
+                        I like experimenting with stuff.
+                    </p>
+                    <p>
+                        Coding is my hobby and it makes me happy most. Anything coding ? I am interested in XD.
+                    </p>
+
+                    <p>
+                        If you wish to contact me, my DMs are open on Twitter and my Mail Box too. Don't just spam me ;)
+                    </p>
+                </div>
             </div>
             </div>
+
+            <div className={styles.footer}>
+			<a href="https://github.com/JosiasAurel"><img src="/github.png" alt="github" className={styles.social} /></a>		 
+			<a href="mailto:%20ndjosiasaurel@gmail.com"><img src="/gmail.png" alt="github" className={styles.social} /></a>		 
+			<a href="https://twitter.com/JosiasWing?s=09"><img src="/twitter.png" alt="github" className={styles.social} /></a>		 
+			<a href="https://josiasaurel.itch.io/"><img src="/itchio.png" alt="github" className={styles.social} /></a>		 
+			</div>
+
+			<h2 className={styles.c}> © 2020 Josias Aurel </h2>
             </>
     )
 }

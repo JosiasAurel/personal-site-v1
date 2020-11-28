@@ -48,3 +48,22 @@
 .tech {
   list-style: square;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social {
+  max-width: 20px;
+}
+
+.c {
+  border-bottom: 2px dotted green;
+}
+
+.git {
+  text-decoration: none;
+  color: grey;
+  border-bottom: 1px dotted green;
+}
