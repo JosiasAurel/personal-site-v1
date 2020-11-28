@@ -59,7 +59,7 @@ const Home = () => {
 			 name="CropBoard"
 			 alt="CropBoard"
 			 imgsrc="/cropb.png"
-			 target="https://cropboard.vercel.app"
+			 target="https://cropboard.josiasaurel.tech"
 			 />
 
 			 <h4> Find More on <a href="https://github.com/JosiasAurel?tab=repositories" className={styles.git}>GitHub</a> </h4>
