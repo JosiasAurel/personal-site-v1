@@ -1,11 +1,11 @@
 
 import React from 'react'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism"
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter language={language} style={tomorrow}>
+    <SyntaxHighlighter language={language} style={atomDark}>
       {value}
     </SyntaxHighlighter>
   )
