@@ -1,5 +1,5 @@
 ---
-title: How to create a react app without using Create-React-App
+title: How to create a react app without using Create-React-App CLI
 ---
 
 In this post i am going to show you how to create a react app without Create-React-App CLI.
@@ -18,7 +18,7 @@ npm install parcel-bundler react react-dom
 ```
 This will install parcel (which is a simpler alternative to webpack) along with react and react-dom.
 
-Now that you have the dependencies installed, create an HTML file which will server as your template.
+Now that you have the dependencies installed, create an HTML file which will serve as your template.
 Let's call it _index.html_
 ```html
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ const Hello = () => {
 ReactDOM.render(<Hello />, document.getElementById("root")) // render element on div with ID of 'root'
 ```
 Now we have a basic react component that shows _Hello World_ to the DOM.
-We need to compile it to actuall see the result.
+We need to compile it to actually see the result.
 You need to run
 ```shell
 parcel index.html #or whatever name you gave to your html file
@@ -76,3 +76,4 @@ You can run the below command to actually build your react app for production
 ```shell
 parcel build index.html
 ```
+Note that you can write your react components in separate files jist lile you will do with create-react-app project.
