@@ -68,6 +68,23 @@ const About = () => {
                     </ul>
                     </div>
                 </div>
+
+                <div>
+                    <h3> What i use</h3>
+                    <div className={styles.stack}>
+                    <ul className={styles.tech}>
+                        <li><a className={styles.lang}>VSCode with Atom One Dark Theme</a></li>
+                        <li><a className={styles.lang}>Termux (for coding on phone)</a></li>
+                        <li><a className={styles.lang}>PowerLevel10K terminal theme</a></li>
+                        <li><a className={styles.lang}>SPCK Editor </a></li>
+                        <li><a className={styles.lang}>Git and GitHub</a></li>
+                        <li><a className={styles.lang}>Post Man (for api testing)</a></li>
+                        <li><a className={styles.lang}>Lenovo K5 Play Phone</a></li>
+                    </ul>
+                    </div>
+                </div>
+
+                
             </div>
             </div>
             </>
