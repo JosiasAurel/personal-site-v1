@@ -45,7 +45,7 @@ const Projects = () => {
 			</header>
 
             <div>
-               <ProjectCard projectName="Snippet Ski" label="At Work" description="A code snippet sharing app." />
+               <ProjectCard projectName="Snippet Ski" label="At Work" description="A code snippet sharing app." code="https://github.com/JosiasAurel/Ski" />
 			   <ProjectCard projectName="Pika" label="At Work" description="A URL shortening app."/>
 				<ProjectCard projectName="GraphQL Book API" description="A simple GraphQL Books API." />
 				<ProjectCard projectName="Paint App" description="A minimalistic basic painting app." />
