@@ -1,0 +1,35 @@
+.homeLightBody {
+  background-color: #1a212c;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.homeDarkBody {
+  font-family: "IBM Plex Mono", monospace;
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+.name {
+  color: #0dfde9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLinks > a {
+  margin: 0.5em;
+  color: rgb(0, 0, 253);
+}
