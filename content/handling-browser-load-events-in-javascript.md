@@ -43,3 +43,7 @@ In case you ever need it to be loaded in an _async_ manner, you can use the _asy
 ```html
 <script src="https://example.com/some-javascript.js" async></script>
 ```
+
+This post was meant to be brief and i hope it was XD.
+
+Read this post about [how the browser renders](https://dev.to/jstarmx/how-the-browser-renders-a-web-page-1ahc) a page to understand everything more into details
