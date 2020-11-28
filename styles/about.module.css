@@ -49,6 +49,10 @@
   list-style: square;
 }
 
+.list {
+  margin-top: 1em;
+}
+
 .footer {
   display: flex;
   justify-content: space-evenly;
