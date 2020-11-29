@@ -46,6 +46,7 @@ Let's call it _index.html_
 </html>
 ```
 Now we need to create our _main.js_ file.
+Add the following code in the main.js file.
 ```javascript
 // import dependencies
 
@@ -69,11 +70,10 @@ You need to run
 ```shell
 parcel index.html #or whatever name you gave to your html file
 ```
-Parcel will take care of the rest, that is : compiling your JSX component to html and bundling it. It will then startup a local server yiu can visit to view your app. It will automatically reload when any change is made.
-
+Parcel will take care of the rest, that is : compiling your JSX component to html and bundling it. It will then startup a local server you can visit to view your app. It will automatically reload when any change is made.
 This is the end. Now you can create a react app withiut the default CLI. 
 You can run the below command to actually build your react app for production
 ```shell
 parcel build index.html
 ```
-Note that you can write your react components in separate files jist lile you will do with create-react-app project.
+Note that you can write your react components in separate files just like you will do with create-react-app project.
