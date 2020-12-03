@@ -2,7 +2,7 @@
 title: 11 JavaScript Console Commands Explained
 ---
 
-# These are 14 useful JavaScript `console` commands to know about.
+# These are 11 useful JavaScript `console` commands to know about.
 
 ## 1. `console.log()`
 
