@@ -1,0 +1,31 @@
+(window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([["react-syntax-highlighter_languages_highlight_plaintext"],{
+
+/***/ "./node_modules/highlight.js/lib/languages/plaintext.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/highlight.js/lib/languages/plaintext.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+Language: Plain text
+Author: Egor Rogov (e.rogov@postgrespro.ru)
+Description: Plain text without any highlighting.
+Category: common
+*/
+
+function plaintext(hljs) {
+    return {
+        name: 'Plain text',
+        aliases: ['text', 'txt'],
+        disableAutodetect: true
+    };
+}
+
+module.exports = plaintext;
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vbm9kZV9tb2R1bGVzL2hpZ2hsaWdodC5qcy9saWIvbGFuZ3VhZ2VzL3BsYWludGV4dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUEiLCJmaWxlIjoic3RhdGljL2NodW5rcy9yZWFjdC1zeW50YXgtaGlnaGxpZ2h0ZXJfbGFuZ3VhZ2VzX2hpZ2hsaWdodF9wbGFpbnRleHQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuTGFuZ3VhZ2U6IFBsYWluIHRleHRcbkF1dGhvcjogRWdvciBSb2dvdiAoZS5yb2dvdkBwb3N0Z3Jlc3Byby5ydSlcbkRlc2NyaXB0aW9uOiBQbGFpbiB0ZXh0IHdpdGhvdXQgYW55IGhpZ2hsaWdodGluZy5cbkNhdGVnb3J5OiBjb21tb25cbiovXG5cbmZ1bmN0aW9uIHBsYWludGV4dChobGpzKSB7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgbmFtZTogJ1BsYWluIHRleHQnLFxuICAgICAgICBhbGlhc2VzOiBbJ3RleHQnLCAndHh0J10sXG4gICAgICAgIGRpc2FibGVBdXRvZGV0ZWN0OiB0cnVlXG4gICAgfTtcbn1cblxubW9kdWxlLmV4cG9ydHMgPSBwbGFpbnRleHQ7XG4iXSwic291cmNlUm9vdCI6IiJ9
