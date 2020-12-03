@@ -17,7 +17,7 @@ console.log({
 console.log(["Apple", "Banana", "Orange"]);
 ```
 
-![console.log objects](/post/console.logobj.png)
+![console.log objects](https://i.ibb.co/NZJHBk3/console-logobj.png)
 
 ## 2. `console.error()`
 
@@ -27,7 +27,7 @@ The console.log() command is used by developers for most of the things they do -
 console.error("Something is wrong");
 ```
 
-![console.error example](/post/consoleerror.png)
+![console.error example](https://i.ibb.co/YfnPcZQ/consoleerror.png)
 
 ## 3. `console.info()`
 
@@ -37,7 +37,7 @@ This console command is especial useful to output information to the console. Ra
 console.info("You are awesome");
 ```
 
-![console info example](/post/consoleinfo.png)
+![console info example](https://i.ibb.co/rsTWxbw/consoleinfo.png)
 
 ## 4. `console.table()`
 
@@ -47,7 +47,7 @@ When dealing with arrays, you usually like to represent it in an easy to underst
 console.table(["orange", "apple", "grape"]);
 ```
 
-![console.table() example](/post/consoletable.png)
+![console.table() example](https://i.ibb.co/yB5vbL3/consoletable.png)
 
 ## 5. `console.assert()`
 
@@ -57,7 +57,7 @@ This console command writes an error message to the console if an evaluates cond
 console.assert(2 > 3, "It cannot be");
 ```
 
-![console.assert example](/post/consoleassert.png)
+![console.assert example](https://i.ibb.co/2sZ49sB/consoleassert.png)
 
 ## 6. `console.clear()`
 
@@ -73,7 +73,7 @@ These two console commands are useful to group stuff together in the console.
 
 The console.group() is used to start a group. The group will continue until it encounters a console.groupEnd().
 
-![console group adn groupEnd exampls](/post/consolegroups.png)
+![console group adn groupEnd exampls](https://i.ibb.co/wLpcTqX/consolegroups.png)
 
 ## 9. `console.warn()`
 
@@ -83,7 +83,7 @@ Logging warnings in the console should be easy! Thats why the console.warn comma
 console.warn("Some warning");
 ```
 
-![console warn example](/post/consolewarn.png)
+![console warn example](https://i.ibb.co/4sSpPFV/consolewarn.png)
 
 ## 10. & 11. `console.time()` and `console.timeEnd()`
 
@@ -100,7 +100,7 @@ for (let i = 0; i < 4; i++) {
 console.timeEnd(); // prints time taken since the timer started
 ```
 
-![console.times example](/post/consoletime.png)
+![console.times example](https://i.ibb.co/JHrvCHF/consoletime.png)
 
 You have reached the end. If you enjoyed this post, please share.
 I encourage you to try ou these console commands to understand them best.
