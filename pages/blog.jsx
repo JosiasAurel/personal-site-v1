@@ -53,6 +53,8 @@ const Posts = () => {
 			          link="/post/install-vscode-on-android" />
 			<PostCard postName="Handle Browser Load events in JavaScript"
 			          link="/post/handling-browser-load-events-in-javascript" />
+			<PostCard postName="11 console commands explained."
+			          link="/post/14js-console-commands-explained" />
         </div>
 
 			 
