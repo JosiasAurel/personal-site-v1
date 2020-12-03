@@ -7,7 +7,8 @@
     "test": "node test.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   },
   "keywords": [
     "Blog",
@@ -17,15 +18,16 @@
   "author": "Josias Aurel",
   "license": "ISC",
   "dependencies": {
+    "@geist-ui/react": "^2.1.0-canary.2",
     "@geist-ui/style": "^2.0.0",
     "gray-matter": "^4.0.2",
     "highlight.js": "^10.3.1",
-    "marked": "^1.2.2",
-    "next": "^10.0.0",
+    "marked": "^1.2.5",
+    "next": "^10.0.3",
     "raw-loader": "^4.0.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-markdown": "^5.0.2",
-    "react-syntax-highlighter": "^15.2.1"
+    "react-markdown": "^5.0.3",
+    "react-syntax-highlighter": "^15.3.1"
   }
 }
