@@ -37,6 +37,8 @@ const Home = () => {
 					<Link href="/about">
 					<a >About</a>
 					</Link>
+
+					<a href="/resume.png" download>Resume</a>
 				</span>
 				<ColorMode
 					onClick={() => toggleColor()}
