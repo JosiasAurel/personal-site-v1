@@ -1,11 +1,17 @@
 /* The typewriter effect on home page */
-.typewriter .name {
+.typewriter {
+    padding-left: -20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ .name {
     overflow: hidden;
-    border-right: .15em solid green;
+    border-right: .15em solid black;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(60, end), blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -13,7 +19,7 @@
         width: 0;
     }
     to {
-        width: 100%;
+        width: 25%;
     }
 }
 
@@ -22,7 +28,11 @@
         border-color: transparent;
     }
     50% {
-        border-color: green;
+        border-color: black;
+        display: none;
+    }
+    100% {
+        display: none;
     }
 }
 
@@ -60,4 +70,11 @@
 .profile {
     max-width: 20%;
     margin-left: 10%;
+}
+
+/* Presentation */
+.present {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
 }

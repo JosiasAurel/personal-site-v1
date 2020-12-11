@@ -16,8 +16,11 @@ const Index = () => {
         <div className={styles.profileContainer}>
             <img className={styles.profile} src="/josias-profile.jpg" alt="Josias Profile"/>
         </div>
-        <div className={styles.typewriter}>
+        
+        <div className={styles.present}>
+            <div className={styles.typewriter}>
             <h1 className={styles.name}>Hi, I'm Josias Aurel</h1>
+        </div>
         </div>
     </div>
     )
