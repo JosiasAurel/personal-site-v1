@@ -1,7 +1,7 @@
 import React from "react"
-import style from "../styles/index.module.css"
 // import styles
 import styles from "../styles/index.module.css"
+
 const Index = () => {
     return (
         <div>
@@ -13,8 +13,10 @@ const Index = () => {
             <a className={styles.headerLink} href="">About</a>
             </span>
         </header>
-
-        <div className={style.typewriter}>
+        <div className={styles.profileContainer}>
+            <img className={styles.profile} src="/josias-profile.jpg" alt="Josias Profile"/>
+        </div>
+        <div className={styles.typewriter}>
             <h1 className={styles.name}>Hi, I'm Josias Aurel</h1>
         </div>
     </div>
