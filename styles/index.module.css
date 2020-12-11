@@ -1,4 +1,4 @@
-
+/* The typewriter effect on home page */
 .typewriter .name {
     overflow: hidden;
     border-right: .15em solid green;
@@ -24,4 +24,29 @@
     50% {
         border-color: green;
     }
+}
+
+/* End of typewriter effect on home page */
+
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2em;
+}
+
+/* Header links */
+.headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+/* header link (individual) */
+.headerLink {
+    margin-left: 4em;
+    color: #FE087F;
+    text-decoration: none;
+    font-size: 1.5em;
 }
