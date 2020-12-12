@@ -5,15 +5,34 @@ import Link from 'next/link'
 import styles from "../../styles/post.module.css"
 import Head from "next/head"
 import Header from "../../components/header"
+import React, {useState} from "react"
 
 
 export default function PostTemplate({content, data}) {
 
+    const [colorMode, setColorMode] = useState("light")
+    const [theme, setTheme] = useState("")
+    const [icon, setIcon] = useState("moon.svg")
+
+    function toggleColorMode() {
+        if (colorMode === "dark") {
+            setTheme("")
+            setColorMode("light")
+            setIcon("/moon.svg")
+        } else if  (theme === "") {
+            setColorMode("dark")
+            setTheme("{styles.dark}")
+            setIcon("/sun.svg")
+            return
+        }
+        return
+    }
+
     const frontmatter = data // Make frontmatter the data
-    const tags = frontmatter.tags // get the tags from blog post
+    const tags = frontmatter.tags ?? [] // get the tags from blog post
     const shower = frontmatter.og // get the og image from the post
     return (
-         <div>
+         <div className={(colorMode === "light") ? "" : (styles.dark) }>
              <Head>
     <title>{frontmatter.title}</title>
     <meta name="og:image" content={shower} />
@@ -21,9 +40,7 @@ export default function PostTemplate({content, data}) {
     <meta property="og:image" content={shower} />
     <meta property="og:title" content={frontmatter.title} />
         </Head>
-
-        <Header />
-
+        <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
         <div className={styles.post}>
             <div>
 	        <h2 className={styles.title}>{frontmatter.title}</h2>

@@ -1,12 +1,30 @@
-import React from "react"
+import React, {useState} from "react"
 import styles from "../styles/uses.module.css"
 import Header from "../components/header"
 
 
 const Uses = () => {
+       const [colorMode, setColorMode] = useState("light")
+    const [theme, setTheme] = useState("")
+    const [icon, setIcon] = useState("moon.svg")
+
+    function toggleColorMode() {
+        if (colorMode === "dark") {
+            setTheme("")
+            setColorMode("light")
+            setIcon("/moon.svg")
+        } else if  (theme === "") {
+            setColorMode("dark")
+            setTheme("{styles.dark}")
+            setIcon("/sun.svg")
+            return
+        }
+        return
+    }
+
     return (
-        <div>
-            <Header />
+        <div className={(colorMode === "light") ? "" : (styles.dark) }>
+            <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
             <div>
                 <h2>Tools</h2>
                 <br/>

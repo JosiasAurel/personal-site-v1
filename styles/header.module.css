@@ -1,7 +1,7 @@
 /* Style the header */
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin-right: 2em;
 }
@@ -9,8 +9,8 @@
 /* Header links */
 .headerLinks {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* header link (individual) */
@@ -28,4 +28,8 @@
 
 .colorModeToggle:focus {
     outline: none;
+}
+
+.getHome {
+    color: #FE087F;
 }

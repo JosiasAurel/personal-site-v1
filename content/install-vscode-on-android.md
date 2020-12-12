@@ -1,6 +1,8 @@
 ---
 title : Install VSCode on an Android Phone
 date : 2020-11-01
+tags: [Android, Development, Tooling]
+og: none
 ---
 
 Hey guys. Today i am going to show you how to install 
