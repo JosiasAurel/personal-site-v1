@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
 import React, {useState} from 'react'
-
+import { Code } from "@chakra-ui/react"
 import ReactMarkdown from 'react-markdown'
 
 import Link from 'next/link'
@@ -22,6 +22,11 @@ export default function PostTemplate({content, data}) {
 <div>
 <ReactMarkdown
             source={content}
+            renderers={
+                {
+                    code: Code
+                }
+            }
           />
 </div>
        
