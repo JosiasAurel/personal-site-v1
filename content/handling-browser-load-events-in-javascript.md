@@ -1,6 +1,8 @@
 ---
 title: Handling Browser Load Events in JavaScript
 date: November 28 2020
+tags: [JavaScript, HTML, CSS]
+og: /postdemo.png
 ---
 
 The browser is a very interesting playground for web developers to play around. Today i am going to talk about how you should correctly use the browser load events to ensure that all the _markup_, _stylesheet_ and _javascript_ you write is loaded correctly and any data to be fetched is done correctly.

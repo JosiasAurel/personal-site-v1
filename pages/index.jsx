@@ -1,19 +1,12 @@
 import React from "react"
+import Header from "../components/header"
 // import styles
 import styles from "../styles/index.module.css"
 
 const Index = () => {
     return (
         <div>
-
-        <header className={styles.header}>
-            <span className={styles.headerLinks}>
-            <a className={styles.headerLink} href="">Uses</a>
-            <a className={styles.headerLink} href="">Blog</a>
-            <a className={styles.headerLink} href="">Projects</a>
-            <a className={styles.headerLink} href="">About</a>
-            </span>
-        </header>
+            <Header />
         <div className={styles.profileContainer}>
             <img className={styles.profile} src="/josias.jpg" alt="Josias Profile"/>
         </div>
