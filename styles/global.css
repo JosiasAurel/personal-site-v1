@@ -19,3 +19,7 @@ a {
     color: teal;
     border-bottom: 1px dotted turquoise;
 }
+
+ul {
+    list-style-type: square;
+}

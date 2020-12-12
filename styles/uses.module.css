@@ -1,0 +1,18 @@
+.tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.tool {
+    max-width: 30%;
+}
+
+.container {
+    text-align: center;
+}
+
+.isTool {
+    
+}
