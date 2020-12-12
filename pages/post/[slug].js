@@ -27,11 +27,6 @@ export default function PostTemplate({content, data}) {
        
          </div> 
         </div>
-
-        
-
-	 
-
           <h2 > © 2020 Josias Aurel </h2>
          </div>
         )

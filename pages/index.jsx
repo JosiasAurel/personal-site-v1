@@ -5,6 +5,7 @@ import styles from "../styles/index.module.css"
 const Index = () => {
     return (
         <div>
+
         <header className={styles.header}>
             <span className={styles.headerLinks}>
             <a className={styles.headerLink} href="">Uses</a>
@@ -14,7 +15,7 @@ const Index = () => {
             </span>
         </header>
         <div className={styles.profileContainer}>
-            <img className={styles.profile} src="/josias-profile.jpg" alt="Josias Profile"/>
+            <img className={styles.profile} src="/josias.jpg" alt="Josias Profile"/>
         </div>
         
         <div className={styles.present}>
@@ -22,6 +23,11 @@ const Index = () => {
             <h1 className={styles.name}>Hi, I'm Josias Aurel</h1>
         </div>
         </div>
+
+        <div>
+            <p>It's nice to have you here.</p>
+        </div>
+
     </div>
     )
 }

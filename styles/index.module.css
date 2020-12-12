@@ -6,6 +6,7 @@
     align-items: center;
 }
  .name {
+     color: teal;
     overflow: hidden;
     border-right: .15em solid black;
     white-space: nowrap;
@@ -70,6 +71,8 @@
 .profile {
     max-width: 20%;
     margin-left: 10%;
+    border-radius: 50%;
+    border-color: #FE087F;
 }
 
 /* Presentation */
@@ -77,5 +80,25 @@
     display: flex;
     justify-content: flex;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 1em;
+    }
+
+    .headerLink {
+        margin-left: 1em;
+    }
+
+    .profileContainer {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .headerLink {
+        margin-left: 0.5em;
+    }
 }
