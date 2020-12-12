@@ -3,7 +3,9 @@
 
 * {
     box-sizing: border-box;
+    cursor: context-menu;
 }
+
 
 body {
     background-color: white;
@@ -42,6 +44,6 @@ blockquote {
 }
 
 img {
-    max-width: 90vw;
+    max-width: 70vw;
 }
 

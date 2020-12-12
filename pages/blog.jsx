@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import Header from "../components/header"
 import Post from "../components/Post"
 import styles from "../styles/blog.module.css"
@@ -6,18 +6,17 @@ import styles from "../styles/blog.module.css"
 const Blog = () => {
     const [colorMode, setColorMode] = useState("light")
     const [theme, setTheme] = useState("")
-    const [icon, setIcon] = useState("moon.svg")
+    const [icon, setIcon] = useState("/moon.svg")
+    
 
     function toggleColorMode() {
         if (colorMode === "dark") {
             setTheme("")
             setColorMode("light")
-            setIcon("/moon.svg")
         } else if  (theme === "") {
             setColorMode("dark")
             setTheme("{styles.dark}")
             setIcon("/sun.svg")
-            return
         }
         return
     }
@@ -26,7 +25,6 @@ const Blog = () => {
             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
 
             <div>
-                <center><h1>Still At work</h1></center>
                 <center><h2>Here you will find cool blog posts.</h2></center>
             </div>
 
