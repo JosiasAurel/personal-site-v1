@@ -1,12 +1,31 @@
-import React from "react"
+import { use } from "marked"
+import React, { useState } from "react"
 import Header from "../components/header"
 // import styles
 import styles from "../styles/index.module.css"
 
 const Index = () => {
+    const [colorMode, setColorMode] = useState("light")
+    const [theme, setTheme] = useState("")
+    const [icon, setIcon] = useState("moon.svg")
+
+    function toggleColorMode() {
+        if (colorMode === "dark") {
+            setTheme("")
+            setColorMode("light")
+            setIcon("/moon.svg")
+        } else if  (theme === "") {
+            setColorMode("dark")
+            setTheme("{styles.dark}")
+            setIcon("/sun.svg")
+            return
+        }
+        return
+    }
+
     return (
-        <div>
-            <Header />
+        <div className={(colorMode === "light") ? "" : (styles.dark) }>
+            <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
         <div className={styles.profileContainer}>
             <img className={styles.profile} src="/josias.jpg" alt="Josias Profile"/>
         </div>
