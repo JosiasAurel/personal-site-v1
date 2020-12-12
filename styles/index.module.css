@@ -66,6 +66,29 @@
     font-size: 1.3em;
 }
 
+.footer {
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social {
+    max-width: 30px;
+    margin-right: 5%;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end > img  {
+    margin-top: 0.4px;
+    max-width: 40px;
+}
+
 @media screen and (max-width: 480px) {
     .name {
         font-size: 1em;

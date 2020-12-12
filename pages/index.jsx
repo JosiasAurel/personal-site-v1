@@ -1,5 +1,4 @@
 import React from "react"
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark"
 import Header from "../components/header"
 // import styles
 import styles from "../styles/index.module.css"
@@ -32,6 +31,15 @@ const Index = () => {
             </p>
            
         </div>
+
+        <footer className={styles.footer}>
+            <a className={styles.social} href="https://twitter.com/JosiasWing?s=09"><img className={styles.social} src="/twitter.png" alt=""/></a>
+            <a className={styles.social} href="https://github.com/JosiasAurel"><img img className={styles.social} src="/github.png" alt=""/></a>
+            <a className={styles.social} href="mailto: ndjosiasaurel@gmail.com"><img img className={styles.social} src="/gmail.png" alt=""/></a>
+            <a href=""></a>
+        </footer>
+
+        <span className={styles.footer2}><h2 className={styles.end}> © 2020 Josias Aurel - Happily built with <img src="/dev/next.png" alt=""/></h2></span>
 
     </div>
     )
