@@ -1,0 +1,15 @@
+
+/* global styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* style scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
