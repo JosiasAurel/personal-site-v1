@@ -20,6 +20,7 @@
   "dependencies": {
     "@geist-ui/react": "^2.1.0-canary.2",
     "@geist-ui/style": "^2.0.0",
+    "apollo-server-micro": "^2.19.0",
     "gray-matter": "^4.0.2",
     "highlight.js": "^10.3.1",
     "marked": "^1.2.5",
