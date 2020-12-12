@@ -1,6 +1,14 @@
 
 
 .post {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.title {
+    font-size: 4em;
+}
+
+.content {
+    font-size: 2em;
 }

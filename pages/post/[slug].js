@@ -16,12 +16,12 @@ export default function PostTemplate({content, data}) {
          
         <div className={styles.post}>
             <div>
-	        <h2>{frontmatter.title}</h2>
+	        <h2 className={styles.title}>{frontmatter.title}</h2>
 		 </div>
               
          
         <div>
-            <ReactMarkdown
+            <ReactMarkdown className={styles.content}
                 source={content}
                 renderers={{code: CodeBlock}} />
        
