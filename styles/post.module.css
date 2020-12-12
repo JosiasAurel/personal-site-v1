@@ -34,6 +34,10 @@
     list-style-type: none;
 }
 
+.tags > li {
+    background-color: sandybrown;
+}
+
 /* Stzle the post og image */
 .og {
     max-width: 90%;

@@ -40,3 +40,8 @@ blockquote {
     padding: 01em;
     border-radius: 4px;
 }
+
+img {
+    max-width: 90vw;
+}
+

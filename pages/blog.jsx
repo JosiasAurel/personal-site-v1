@@ -34,6 +34,7 @@ const Blog = () => {
                 <Post title="11 JavaScript Console Commands explained" link="14js-console-commands-explained" />
                 <Post title="Handling browser load events" link="handling-browser-load-events-in-javascript" />
                 <Post title="Install VSCode on Android" link="install-vscode-on-android" />
+                <Post title="How to create React app without create-react-app CLI" link="how-to-create-react-app-without-the-cra-cli" />
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 ---
 title: How to create a react app without using Create-React-App CLI
+tags: [howto, React, CLI, Dev, npm]
 ---
 
 In this post i am going to show you how to create a react app without Create-React-App CLI.
