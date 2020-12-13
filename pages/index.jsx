@@ -23,9 +23,29 @@ function Index() {
         return
     }
 
+<<<<<<< HEAD
     return (
         <div className={(colorMode === "light") ? "" : (styles.dark) }>
             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+=======
+					<Link href="/about">
+					<a >About</a>
+					</Link>
+
+					<a href="/resume.png" download>Resume</a>
+				</span>
+				<ColorMode
+					onClick={() => toggleColor()}
+					value={colorText}
+				/>
+			</header>
+		<span className={styles.imgc}>
+		 <img className={styles.logo} src="/josias-profile.png" alt="josias-logo" />
+</span>
+		 <h2 className={styles.pre}>
+		 Hi, I'm Josias Aurel
+		  </h2>
+>>>>>>> master
 
             <Head>
                 <title>Josias Aurel - Home</title>
