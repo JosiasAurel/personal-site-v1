@@ -1,76 +1,69 @@
 import matter from 'gray-matter'
-import React, {useState} from 'react'
-import CodeBlock from '../../components/mdHandler'
+import CodeBlock from "../../components/CodeBlock"
 import ReactMarkdown from 'react-markdown'
-import PostTitle from '../../components/postTitle'
-import styles from '../../styles/postPage.module.css'
-import Link from 'next/link'
-import Post from '../../components/post'
-import ColorMode from '../../components/ColorMode'
+import styles from "../../styles/post.module.css"
+import Head from "next/head"
+import Header from "../../components/header"
+import React, {useState, useEffect} from "react"
+
 
 export default function PostTemplate({content, data}) {
 
-    const frontmatter = data // Make frontmatter the data
+    const [colorMode, setColorMode] = useState("light")
+    const [theme, setTheme] = useState("")
+    const [icon, setIcon] = useState("/moon.svg")
+    
 
-    const  [Mode, setMode] = useState("Dark");
-	const [colorText, setColorText] = useState("Dark")
-	function toggleColor() {
-        if (Mode === "Light") {
-			setMode("Dark")
-			setColorText("Dark")
-        } else if (Mode === "Dark") {
-			setMode("Light")
-            setColorText("Light")
+    function toggleColorMode() {
+        if (colorMode === "dark") {
+            setTheme("")
+            setColorMode("light")
+        } else if  (theme === "") {
+            setColorMode("dark")
+            setTheme("{styles.dark}")
+            setIcon("/sun.svg")
         }
-	}
-	
+        return
+    }
+
+    const frontmatter = data // Make frontmatter the data
+    const tags = frontmatter.tags ?? [] // get the tags from blog post
+    const shower = frontmatter.og // get the og image from the post
+
 
     return (
-         <div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
-         <header className={styles.header}>
-		 <Link href="/">
-				<a><h2 className={styles.name}>JA</h2></a>
-				</Link>
 
-				<span className={styles.headerLinks}>
-					<Link href="/blog">
-					<a >Blog</a>
-					</Link>
-
-					<Link href="/projects">
-					<a >Projects</a>
-					</Link>
-
-					<Link href="/about">
-					<a >About</a>
-					</Link>
-				</span>
-				<ColorMode
-					onClick={() => toggleColor()}
-					value={colorText}
-				/>
-			</header>
-         <PostTitle
-              title={frontmatter.title}
-              date="@JosiasWing"
-          />
-
-          <Post>
-         <ReactMarkdown
-            source={content}
-            renderers={{code: CodeBlock}}
-          />
-
-          </Post>
-
-	 <div className={styles.footer}>
-			<a href="https://github.com/JosiasAurel"><img src="/github.png" alt="github" className={styles.social} /></a>		 
-			<a href="mailto:%20ndjosiasaurel@gmail.com"><img src="/gmail.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://twitter.com/JosiasWing?s=09"><img src="/twitter.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://josiasaurel.itch.io/"><img src="/itchio.png" alt="github" className={styles.social} /></a>		 
-			</div>
-
-          <h2 className={styles.c}> © 2020 Josias Aurel </h2>
+         <div className={(colorMode === "light") ? "" : (styles.dark) }>
+             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+             <Head>
+    <title>{frontmatter.title}</title>
+    <meta name="og:image" content={shower} />
+    <meta name="og:title" content={frontmatter.title} />
+    <meta property="og:image" content={shower} />
+    <meta property="og:title" content={frontmatter.title} />
+        </Head>
+        <div className={styles.post}>
+            <div>
+	        <h1 className={styles.title}>{frontmatter.title}</h1>
+			<p>{frontmatter.date}</p>
+            <ul className={styles.tags}>
+                {tags.map(tag => {
+                    return (
+                    <li>{tag}</li>
+                    )
+                })}
+            </ul>
+		 </div>
+              
+         
+        <div>
+            <ReactMarkdown className={styles.content}
+                source={content}
+                renderers={{code: CodeBlock}} />
+       
+         </div> 
+        </div>
+          <h2 > © 2020 Josias Aurel </h2>
          </div>
         )
 }
@@ -81,6 +74,6 @@ PostTemplate.getInitialProps = async (ctx) => {
     const content = await import(`../../content/${slug}.md`)
     
     const data = matter(content.default)
-    //console.log(data)
+    console.log(data)
     return { ...data }
 }

@@ -1,0 +1,41 @@
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2em;
+}
+
+/* Header links */
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header link (individual) */
+.headerLink {
+    margin-left: 4em;
+    color: #FE087F;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.colorModeToggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.colorModeToggle:focus {
+    outline: none;
+}
+
+.getHome {
+    color: #FE087F;
+}
+
+@media screen and (max-width: 500px) {
+    .headerLink {
+        margin-left: 1em;
+    }
+}

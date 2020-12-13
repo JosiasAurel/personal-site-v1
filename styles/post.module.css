@@ -1,30 +1,59 @@
-.homeDarkBody {
-  font-family: "IBM Plex Mono", monospace;
+
+
+/* The dark and ligh theme */
+
+.dark {
+    background-color: rgb(0, 0, 31);
+    color: white;
 }
 
-.homeLightBody {
-  background-color: #1a212c;
-  color: white;
+
+.post {
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
-.con {
-  margin: 8px;
-  border: solid;
-  border-color: rgba(124, 124, 126, 0.2);
-  border-radius: 6px;
+.title {
+    font-size: 4em;
+    font-weight: 20;
 }
 
-.header {
-  display: flex;
-  justify-content: space-evenly;
+.content {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.headerLinks {
-  display: flex;
-  justify-content: space-evenly;
+/* The tags for the blog post */
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
 }
 
-.headerLinks > a {
-  margin: 0.5em;
-  color: rgb(0, 0, 253);
+.tags > li {
+    background-color: sandybrown;
+}
+
+/* Stzle the post og image */
+.og {
+    max-width: 90%;
+    box-shadow: 0 0 9px 1px #00523d;
+}
+
+.ogContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 480px) {
+	.post {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 }

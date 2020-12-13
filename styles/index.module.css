@@ -1,0 +1,125 @@
+
+/* The dark and ligh theme */
+
+.dark {
+    background-color: rgb(0, 0, 31);
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* The typewriter effect on home page */
+.typewriter {
+margin-top: 2em;
+    padding-left: -20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ .name {
+     color: teal;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+        display: none;
+    }
+    100% {
+        display: none;
+    }
+}
+
+/* End of typewriter effect on home page */
+
+/* Profile container style */
+.profileContainer {
+    margin-top: 3em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile {
+    max-width: 40%;
+    margin-left: 10%;
+    border-radius: 50%;
+    border-color: #FE087F;
+}
+
+/* Presentation */
+.present {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.message {
+    margin-left: 10%;
+    font-size: 1.3em;
+}
+
+.footer {
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social {
+    max-width: 30px;
+    margin-right: 5%;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end > img  {
+    margin-top: 0.4px;
+    max-width: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 1em;
+    }
+
+    .profileContainer {
+        margin-top: 3em;
+    }
+
+    .message {
+    	margin: 2%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .headerLink {
+        margin-left: 0.5em;
+    }
+    .message {
+    	margin-left: 1%;
+    }
+}

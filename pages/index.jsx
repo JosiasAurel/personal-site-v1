@@ -1,39 +1,33 @@
-import styles from '../styles/home.module.css'
-import Tech from '../components/tech'
-import ProjectCard from '../components/projectCard'
-import Link from 'next/link'
-import React, {useState} from 'react'
-import ColorMode from '../components/ColorMode'
+import { use } from "marked"
+import React, { useState, useEffect } from "react"
+import Header from "../components/header"
+// import styles
+import styles from "../styles/index.module.css"
+import Head from "next/head"
 
-const Home = () => {
-	const  [Mode, setMode] = useState("Dark");
-	const [colorText, setColorText] = useState("Dark")
-	function toggleColor() {
-        if (Mode === "Light") {
-			setMode("Dark")
-			setColorText("Dark")
-        } else if (Mode === "Dark") {
-			setMode("Light")
-            setColorText("Light")
+function Index() {
+    const [colorMode, setColorMode] = useState("light")
+    const [theme, setTheme] = useState("")
+    const [icon, setIcon] = useState("/moon.svg")
+    
+
+    function toggleColorMode() {
+        if (colorMode === "dark") {
+            setTheme("")
+            setColorMode("light")
+        } else if  (theme === "") {
+            setColorMode("dark")
+            setTheme("{styles.dark}")
+            setIcon("/sun.svg")
         }
-	}
-	
-	return (
-		<div className={styles.body}>
-		<div className={ (Mode === "Light") ? (styles.homeLightBody) : (styles.homeDarkBody) }>
-			<header className={styles.header}>
-			<Link href="/">
-				<a><h2 className={styles.name}>JA</h2></a>
-				</Link>
-				<span className={styles.headerLinks}>
-					<Link href="/blog">
-					<a >Blog</a>
-					</Link>
+        return
+    }
 
-					<Link href="/projects">
-					<a >Projects</a>
-					</Link>
-
+<<<<<<< HEAD
+    return (
+        <div className={(colorMode === "light") ? "" : (styles.dark) }>
+            <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+=======
 					<Link href="/about">
 					<a >About</a>
 					</Link>
@@ -49,33 +43,49 @@ const Home = () => {
 		 <h2 className={styles.pre}>
 		 Hi, I'm Josias Aurel
 		  </h2>
+>>>>>>> master
 
-		  <Tech 
-			/>
+            <Head>
+                <title>Josias Aurel - Home</title>
+            </Head>
+        <div className={styles.profileContainer}>
+            <img className={styles.profile} src="/josias.jpg" alt="Josias Profile"/>
+        </div>
+        
+        <div className={styles.present}>
+            <div className={styles.typewriter}>
+            <h1 className={styles.name}>Hey, I'm Josias Aurel</h1>
+        </div>
+        </div>
 
-			<h2> Projects I work On </h2>
+        <div className={styles.message}>
+            <p>It's nice to have you here.</p>
+            <p>I am a hobbyist self-taugh developer from Cameroon.
+                <br/>
+                I code everyday on random stuff or my projects, because coding is fun for me.
+                <br/>
+                <p>You can reach out to me on Twitter - that's where i usually hangout.</p>
+            </p>
+            <p>I am an occasional Open Source contributor and maintainer.
+                <br/>
+                Fun fact : I write bugs XD.
+            </p>
+           
+        </div>
 
-			<ProjectCard
-			 name="CropBoard"
-			 alt="CropBoard"
-			 imgsrc="/cropb.png"
-			 target="https://cropboard.josiasaurel.tech"
-			 />
+        <footer className={styles.footer}>
+            <a className={styles.social} href="https://twitter.com/JosiasWing?s=09"><img className={styles.social} src="/twitter.png" alt=""/></a>
+            <a className={styles.social} href="https://github.com/JosiasAurel"><img img className={styles.social} src="/github.png" alt=""/></a>
+            <a className={styles.social} href="mailto: ndjosiasaurel@gmail.com"><img img className={styles.social} src="/gmail.png" alt=""/></a>
+        </footer>
 
-			 <h4> Find More on <a href="https://github.com/JosiasAurel?tab=repositories" className={styles.git}>GitHub</a> </h4>
-			 <div className={styles.footer}>
-			<a href="https://github.com/JosiasAurel"><img src="/github.png" alt="github" className={styles.social} /></a>		 
-			<a href="mailto:%20ndjosiasaurel@gmail.com"><img src="/gmail.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://twitter.com/JosiasWing?s=09"><img src="/twitter.png" alt="github" className={styles.social} /></a>		 
-			<a href="https://josiasaurel.itch.io/"><img src="/itchio.png" alt="github" className={styles.social} /></a>	
-			<a href="https://hashnode.com/@JosiasAurel"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1592752137870/scHk9tTaA.png?auto=compress" alt="hashnode" className={styles.social} /></a>	 
-			<a href="https://dev.to/josiasaurel"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" alt="dev.to" className={styles.social} /></a>	
-			</div>
-		
-			<h2 className={styles.c}> © 2020 Josias Aurel </h2>
-		</div>
-		</div>
-	)
+        <span className={styles.footer2}>
+        <h2 className={styles.end}> 
+        © 2020 Josias Aurel <br />  Happily built with
+         <img src="/dev/next.png" alt=""/></h2></span>
+    </div>
+    )
 }
 
-export default Home
+
+export default Index

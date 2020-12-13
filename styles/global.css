@@ -1,62 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Source+Code+Pro&family=Ubuntu:wght@500&display=swap');
+
+/* global styles */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: context-menu;
 }
+
 
 body {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
+    background-color: white;
+    margin: 0;
+    font-family: monospace;
 }
 
-code {
-  border: solid;
-  border-radius: 5px;
-  border-color: transparent;
-  margin: 8px;
-}
-
-pre {
-  margin: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  margin: 20px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 20px;
-  margin: 20px;
+/* style scrollbar */
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
-  text-decoration: none;
-  color: #0cb6fe;
+    text-decoration: none;
+    color: teal;
+    border-bottom: 1px dotted turquoise;
 }
 
-::-webkit-scrollbar {
-  width: 2px;
-  background-color: blue;
-  color: blue;
+ul {
+    list-style-type: square;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: blue;
+::selection {
+    background-color: turquoise;
+    color: white;
 }
 
-::-webkit-scrollbar-thumb {
-  color: blue;
+em {
+    background-color: rgba(248, 245, 47, 0.541);
+    
 }
+
+blockquote {
+    background-color: rgba(214, 214, 214, 0.432);
+    border-left: 1em solid hotpink;
+    padding: 01em;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 70vw;
+}
+
+h1, h2, h3, p {
+    word-wrap: break-word;
+}
+
