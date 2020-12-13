@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import Header from "../components/header"
 import Post from "../components/Post"
 import styles from "../styles/blog.module.css"
+import Head from "next/head"
 
 const Blog = () => {
     const [colorMode, setColorMode] = useState("light")
@@ -23,7 +24,9 @@ const Blog = () => {
     return (
         <div className={(colorMode === "light") ? "" : (styles.dark) }>
             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
-
+            <Head>
+                <title>Josias Aurel - Blog</title>
+            </Head>
             <div>
                 <center><h2>Here you will find cool blog posts.</h2></center>
             </div>

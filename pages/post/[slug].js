@@ -44,7 +44,8 @@ export default function PostTemplate({content, data}) {
         </Head>
         <div className={styles.post}>
             <div>
-	        <h2 className={styles.title}>{frontmatter.title}</h2>
+	        <h1 className={styles.title}>{frontmatter.title}</h1>
+			<p>{frontmatter.date}</p>
             <ul className={styles.tags}>
                 {tags.map(tag => {
                     return (

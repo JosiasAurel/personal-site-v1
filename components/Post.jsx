@@ -20,6 +20,13 @@ const Post = ({ title, link }) => {
 h1 {
     color: hotpink;
 }
+
+@media screen and (max-width: 480px) {
+	.container {
+		margin-left: 10% ;
+		margin-right: 10%;
+	}
+}
             `
             }
             </style>

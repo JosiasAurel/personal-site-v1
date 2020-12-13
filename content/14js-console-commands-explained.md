@@ -1,6 +1,7 @@
 ---
 title: 11 JavaScript Console Commands Explained
 tags: [JavaScript, Helpers, Beginner]
+date: 03/12/2020
 ---
 
 # These are 11 useful JavaScript `console` commands to know about.

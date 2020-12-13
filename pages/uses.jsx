@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import styles from "../styles/uses.module.css"
 import Header from "../components/header"
-
+import Head from "next/head"
 
 const Uses = () => {
     const [colorMode, setColorMode] = useState("light")
@@ -23,8 +23,14 @@ const Uses = () => {
     return (
         <div className={(colorMode === "light") ? "" : (styles.dark) }>
             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+
+            <Head>
+                <title>
+                    Josias Aurel - Uses
+                </title>
+            </Head>
             <div>
-                <h2>Tools</h2>
+               <center> <h2>Tools</h2></center>
                 <br/>
                 <ul>
                     <li>PC</li>
@@ -37,7 +43,7 @@ const Uses = () => {
                     <li>Postman</li>
                     <li>Restler (Postman-like tool for Android)</li>
                 </ul>
-                <h2>Languages, Frameworks and Libraries</h2>
+               <center> <h2>Languages, Frameworks and Libraries</h2> </center>
                 <div className={styles.container}>
                     <ul className={styles.tools}>
                     <span className={styles.isTool}>

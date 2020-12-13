@@ -33,3 +33,9 @@
 .getHome {
     color: #FE087F;
 }
+
+@media screen and (max-width: 500px) {
+    .headerLink {
+        margin-left: 1em;
+    }
+}

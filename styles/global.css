@@ -9,6 +9,8 @@
 
 body {
     background-color: white;
+    margin: 0;
+    font-family: monospace;
 }
 
 /* style scrollbar */
@@ -45,5 +47,9 @@ blockquote {
 
 img {
     max-width: 70vw;
+}
+
+h1, h2, h3, p {
+    word-wrap: break-word;
 }
 

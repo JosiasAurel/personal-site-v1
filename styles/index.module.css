@@ -5,11 +5,13 @@
     background-color: rgb(0, 0, 31);
     color: white;
     height: 100%;
+    width: 100%;
 }
 
 
 /* The typewriter effect on home page */
 .typewriter {
+margin-top: 2em;
     padding-left: -20%;
     display: flex;
     justify-content: flex-start;
@@ -57,7 +59,7 @@
 }
 
 .profile {
-    max-width: 20%;
+    max-width: 40%;
     margin-left: 10%;
     border-radius: 50%;
     border-color: #FE087F;
@@ -104,17 +106,20 @@
         font-size: 1em;
     }
 
-    .headerLink {
-        margin-left: 1em;
-    }
-
     .profileContainer {
         margin-top: 3em;
+    }
+
+    .message {
+    	margin: 2%;
     }
 }
 
 @media screen and (max-width: 340px) {
     .headerLink {
         margin-left: 0.5em;
+    }
+    .message {
+    	margin-left: 1%;
     }
 }

@@ -50,3 +50,10 @@
     align-items: center;
     margin-top: 3em;
 }
+
+@media screen and (max-width: 480px) {
+	.post {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
