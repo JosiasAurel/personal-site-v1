@@ -74,6 +74,6 @@ PostTemplate.getInitialProps = async (ctx) => {
     const content = await import(`../../content/${slug}.md`)
     
     const data = matter(content.default)
-    console.log(data)
+    //console.log(data)
     return { ...data }
 }

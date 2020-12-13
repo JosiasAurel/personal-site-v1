@@ -32,6 +32,7 @@ const Blog = () => {
             </div>
 
             <div>
+                <Post title="9 Useful apps for web developers" link="9-useful-apps-for-devs" />
                 <Post title="11 JavaScript Console Commands explained" link="14js-console-commands-explained" />
                 <Post title="Handling browser load events" link="handling-browser-load-events-in-javascript" />
                 <Post title="Install VSCode on Android" link="install-vscode-on-android" />
