@@ -41,6 +41,10 @@ export default function PostTemplate({content, data}) {
     <meta name="og:title" content={frontmatter.title} />
     <meta property="og:image" content={shower} />
     <meta property="og:title" content={frontmatter.title} />
+    <meta name="twitter:title" content={frontmatter.title} />
+    <meta name="twitter:site" content="@JosiasWing" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={shower} />
         </Head>
         <div className={styles.post}>
             <div>
