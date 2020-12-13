@@ -2,7 +2,7 @@
 title: 9 Useful apps for Developers
 tags: [Web, Developers, Utlities]
 date: 13/12/2020
-og: none.png
+og: https://raw.githubusercontent.com/JosiasAurel/blog-og/master/9-useful-apps-for-devs.png
 ---
 
 ### Here are 9 useful apps for developers
