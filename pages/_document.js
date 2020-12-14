@@ -5,7 +5,7 @@ class JADocument extends Document {
 		return (
 			<Html>
 				<Head>
-<meta name="monetization" content="$ilp.uphold.com/ZQJwqFyPPwrF">
+<meta name="monetization" content="$ilp.uphold.com/ZQJwqFyPPwrF" />
 				 <meta name="theme-color" content="#fe087f" />
                   <link rel="stylesheet" href="/style.css" />
 					<link rel="shortcut icon" href="/josias.png" />					    
