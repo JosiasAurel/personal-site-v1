@@ -9,7 +9,7 @@ og: https://raw.githubusercontent.com/JosiasAurel/blog-og/master/9-useful-apps-f
 
 Today i am going to share to you the apps i use on all the time when developing. 
 
-#### [Web Screenshot](https://https://webscreenshot.now.sh)
+#### [Web Screenshot](https://webscreenshot.now.sh)
 As the name goes, this is an app that enebles you to take screenshots of websites and web apps. It provides and easy to use interface in order to create high quality screenshots of any websites.
 With this app, you are allowed to modify the screenshot size and quality.
 
