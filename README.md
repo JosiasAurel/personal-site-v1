@@ -1,4 +1,4 @@
-## JosiasAureDEV
+## JosiasAurel DEV
 
 This is my official personal site and blog.
 
