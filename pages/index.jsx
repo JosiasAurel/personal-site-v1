@@ -48,7 +48,7 @@ function Index() {
             </p>
             <p>I am an occasional Open Source contributor and maintainer.
                 <br/>
-                Fun fact : I write bugs XD.
+                Fun fact : I write bugs, they are so cool they are called features.
             </p>
            
         </div>
