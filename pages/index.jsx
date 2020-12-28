@@ -101,6 +101,10 @@ const Index = () => {
                         <Image src="/dev/godot.png" width="40px" height="40px" />
                         <p>Godot</p>
                     </li>
+                    <li>
+                        <Image src="/icons/next.png" width="40px" height="40px" />
+                        <p>NextJS</p>
+                    </li>
                 </ul>
                 </div>
 
