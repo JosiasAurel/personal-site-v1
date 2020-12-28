@@ -14,7 +14,7 @@ const Index = () => {
         <div>
             <Head>
                 <meta name="og:title" content="Josias Aurel" />
-                <meta name="og:image" content="/og.PNG"/>
+                <meta name="og:image" content="https://raw.githubusercontent.com/JosiasAurel/josiasaureldev/master/public/og.PNG?token=ALN24EAEFPPAFJFPKZDNJHC75IB3U"/>
             </Head>
             <Header />
             <div className={styles.page}>
