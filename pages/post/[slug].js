@@ -5,35 +5,17 @@ import styles from "../../styles/post.module.css"
 import Head from "next/head"
 import Header from "../../components/header"
 import React, {useState, useEffect} from "react"
+import { formatWithValidation } from 'next/dist/next-server/lib/utils'
 
 
 export default function PostTemplate({content, data}) {
-
-    const [colorMode, setColorMode] = useState("light")
-    const [theme, setTheme] = useState("")
-    const [icon, setIcon] = useState("/moon.svg")
-
-    function toggleColorMode() {
-        if (colorMode === "dark") {
-            setTheme("")
-            setColorMode("light")
-        } else if  (theme === "") {
-            setColorMode("dark")
-            setTheme("{styles.dark}")
-            setIcon("/sun.svg")
-        }
-        return
-    }
-
-    const frontmatter = data // Make frontmatter the data
-    const tags = frontmatter.tags ?? [] // get the tags from blog post
-    const shower = frontmatter.og // get the og image from the post
-
-
+        let frontmatter = data
+        let shower = frontmatter.og
+        let tags = frontmatter.tags
     return (
 
-         <div className={(colorMode === "light") ? "" : (styles.dark) }>
-             <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+         <div>
+             <Header />
              <Head>
     <title>{frontmatter.title}</title>
     <meta name="og:image" content={shower} />
@@ -69,7 +51,7 @@ export default function PostTemplate({content, data}) {
      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rocketstellar" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
        </div>
-         <center> <h2 > © 2020 Josias Aurel </h2></center>
+         <center><p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p></center>
          </div> 
         )
 }
