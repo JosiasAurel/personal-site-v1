@@ -24,7 +24,6 @@ const Index = () => {
                     <Image width="200px" height="200px" className={styles.profile} src="/josias.jpg" />
                 </div>
 
-<<<<<<< HEAD
                 <p className={styles.present}>
                     I am a self-taught full-stack developer also in Game, Machine Learning and Mobile development from cameroon. <br/>
                     I love to code for fun and experiment. <br/>
@@ -103,7 +102,7 @@ const Index = () => {
                     </li>
                 </ul>
                 </div>
-=======
+
         <div className={styles.message}>
             <p>It's nice to have you here.</p>
             <p>I am a hobbyist self-taugh developer from Cameroon.
@@ -118,7 +117,6 @@ const Index = () => {
             </p>
            
         </div>
->>>>>>> 7af5b9a09f0a3c0172fab5eb10f7c61b022df6df
 
                     <hr className={styles.separator} />
 
