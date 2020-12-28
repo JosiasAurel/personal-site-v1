@@ -14,6 +14,10 @@ body {
     font-family: arial;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* style scrollbar */
 ::-webkit-scrollbar {
     display: none;
