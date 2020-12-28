@@ -9,16 +9,15 @@ const Post = ({ title, link }) => {
             </Link>
             <style jsx>{`
                 .container {
-    background-color: rgb(255, 239, 100);
-    border: solid 2px salmon;
+    background-color: transparent;
     margin-top: 5%;
     margin-left: 30%;
     margin-right: 30%;
-    padding: 5%;
+    padding: 1%;
 }
 
 h1 {
-    color: hotpink;
+    color: black;
 }
 
 @media screen and (max-width: 480px) {

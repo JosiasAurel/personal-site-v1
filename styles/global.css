@@ -4,13 +4,14 @@
 * {
     box-sizing: border-box;
     cursor: context-menu;
+    transition: 0.2s;
 }
 
 
 body {
     background-color: white;
     margin: 0;
-    font-family: monospace;
+    font-family: arial;
 }
 
 /* style scrollbar */
@@ -21,7 +22,6 @@ body {
 a {
     text-decoration: none;
     color: teal;
-    border-bottom: 1px dotted turquoise;
 }
 
 ul {
@@ -53,3 +53,6 @@ h1, h2, h3, p {
     word-wrap: break-word;
 }
 
+.color {
+    color: black;
+}

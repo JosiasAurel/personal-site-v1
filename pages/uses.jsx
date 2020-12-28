@@ -43,62 +43,13 @@ const Uses = () => {
                     <li>Postman</li>
                     <li>Restler (Postman-like tool for Android)</li>
                 </ul>
-               <center> <h2>Languages, Frameworks and Libraries</h2> </center>
-                <div className={styles.container}>
-                    <ul className={styles.tools}>
-                    <span className={styles.isTool}>
-                        <li ><img className={styles.tool} src="/dev/html.png" alt=""/></li>
-                        <p>HTML</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/css.png" alt=""/></li>
-                        <p>CSS</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/js.png" alt=""/></li>
-                        <p>JavaScript</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/ts.png" alt=""/></li>
-                        <p>TypeScript</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/python.png" alt=""/></li>
-                        <p>Python</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/react.png" alt=""/></li>
-                        <p>React</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/flask.png" alt=""/></li>
-                        <p>Flask</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/django.png" alt=""/></li>
-                        <p>Djano</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/git.png" alt=""/></li>
-                        Git
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/graphql.png" alt=""/></li>
-                        GraphQL
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/node.png" alt=""/></li>
-                        <p>NodeJS</p>
-                    </span>
-                    <span>
-                        <li ><img className={styles.tool} src="/dev/godot.png" alt=""/></li>
-                        <p>Godot</p>
-                    </span>
-                </ul>
-                </div>
 
-                <h3>THEY ARE JUST TOOLS!</h3>
+                <h3 style={{textAlign: "center"}}>THEY ARE JUST TOOLS!</h3>
             </div>
+
+            <footer className={styles.footer}>
+                    <p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p>
+                </footer>
         </div>
     )
 }

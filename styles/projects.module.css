@@ -1,8 +1,7 @@
-/* The dark and ligh theme */
 
-.dark {
-    background-color: rgb(0, 0, 31);
-    color: white;
-    height: 100vh;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
 }
-

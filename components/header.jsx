@@ -1,27 +1,24 @@
-import React, { useState } from "react"
+import React from "react"
 import styles from "../styles/header.module.css"
 import Link from "next/link"
 
-const Header = ({ icon, changeHandler }) => {
+const Header = () => {
     return (
         <header className={styles.header}>
-            <span>
-                <Link href="/">
-                    <h2 className={styles.getHome}>JA</h2>
-                </Link>
-            </span>
-            <span className={styles.headerLinks}>
-                <Link href="/uses">
-                <a className={styles.headerLink}>Uses</a>
-                </Link>
-                <Link href="/blog">
-                <a className={styles.headerLink}>Blog</a>
-                </Link>
-            <Link href="/projects">
-            <a className={styles.headerLink}>Projects</a>
-            </Link>
-            <button onClick={changeHandler} className={styles.colorModeToggle}><img src={icon} alt=""/></button>
-            </span>
+            <ul className={styles.pageLinks}>
+                <li>
+                    <Link href="/">
+                        <a>Start</a>
+                    </Link>
+                </li>
+                <li><Link href="/uses"><a>Uses</a></Link></li>
+                <li><Link href="/blog"><a>Blog</a></Link></li>
+                <li> <Link href="/projects"><a>Projects</a></Link></li>
+            </ul>
+
+            <a className={styles.twitterMe} href="https://twitter.com/JosiasWing?s=09">
+                <img src="/icons/twitter.svg" alt="twitter-logo"/>
+            </a>
         </header>
     )
 }

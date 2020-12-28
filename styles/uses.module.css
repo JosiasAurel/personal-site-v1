@@ -14,9 +14,9 @@
 }
 
 
-/* The dark and ligh theme */
-
-.dark {
-    background-color: rgb(0, 0, 31);
-    color: white;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
 }

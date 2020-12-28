@@ -1,41 +1,52 @@
-/* Style the header */
+
 .header {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-right: 2em;
 }
 
-/* Header links */
-.headerLinks {
+.pageLinks {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
-/* header link (individual) */
-.headerLink {
-    margin-left: 4em;
-    color: #FE087F;
+.pageLinks > li > a {
     text-decoration: none;
-    font-size: 1.5em;
+    color: black;
+    border-bottom: none;
+    border-radius: 5px;
+    padding: 4px;
+    transition: 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.colorModeToggle {
-    background-color: transparent;
-    border-color: transparent;
+.pageLinks > li > a:hover {
+    background-color: black;
+    color: white;
+
 }
 
-.colorModeToggle:focus {
-    outline: none;
+.twitterMe {
+    text-decoration: none;
+    border-bottom: none;
+    margin-right: 10px;
 }
 
-.getHome {
-    color: #FE087F;
+.twitterMe > img {
+    max-width: 30px;
 }
 
 @media screen and (max-width: 500px) {
-    .headerLink {
-        margin-left: 1em;
+    .twitterMe {
+        max-width: 15px;
+    }
+
+    .pageLinks  {
+        margin-left: -30px;
     }
 }
