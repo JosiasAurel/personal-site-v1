@@ -126,11 +126,12 @@ const Index = () => {
 
                 <ul className={styles.socials}>
                     <li><a href="https://twitter.com/JosiasWing?s=09"><Image src="/icons/twitterlogo.svg" width="30px" height="30px" /></a></li>
-                    <li><a href=""><Image src="/icons/In.svg" width="30px" height="30px" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/josias-aurel-dev-io/"><Image src="/icons/In.svg" width="30px" height="30px" /></a></li>
                     <li><a href="https://github.com/JosiasAurel"><Image src="/icons/github.svg" width="30px" height="30px" /></a></li>
-                    <li><a href=""><Image src="/icons/dev.svg" width="30px" height="30px" /></a></li>
-                    <li><a href=""><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
-                    <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
+                    <li><a href="https://dev.to/josiasaurel"><Image src="/icons/dev.svg" width="30px" height="30px" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLyEFauz2k4mnJYC5RxlDBQ"><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
+                   <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
+                   <li><a href="https://hashnode.com/@JosiasAurel"><Image src="https://cdn.hashnode.com/res/hashnode/image/upload/v1592752137870/scHk9tTaA.png?auto=compress" width="30px" height="30px" /></a></li>
                 </ul>
 
                 <footer className={styles.footer}>

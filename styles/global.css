@@ -1,6 +1,8 @@
 
 /* global styles */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     cursor: context-menu;
@@ -11,7 +13,7 @@
 body {
     background-color: white;
     margin: 0;
-    font-family: arial;
+    font-family: 'IBM Plex Mono', arial;
 }
 
 html {

@@ -7,7 +7,6 @@ class JADocument extends Document {
 				<Head>
 <meta name="monetization" content="$ilp.uphold.com/ZQJwqFyPPwrF" />
 				 <meta name="theme-color" content="black" />
-
                   <link rel="stylesheet" href="/style.css" />
 					<link rel="shortcut icon" href="/josias.jpg" />					    
 				</Head>
