@@ -1,6 +1,7 @@
 import React from "react"
 
 import Image from "next/image"
+import Head from "next/head"
 
 // import custom styles
 import styles from "../styles/index.module.css"
@@ -11,6 +12,10 @@ import Header from "../components/header"
 const Index = () => {
     return (
         <div>
+            <Head>
+                <meta name="og:title" content="Josias Aurel" />
+                <meta name="og:image" content="/og.PNG"/>
+            </Head>
             <Header />
             <div className={styles.page}>
                 
@@ -110,6 +115,7 @@ const Index = () => {
                     <li><a href="https://github.com/JosiasAurel"><Image src="/icons/github.svg" width="30px" height="30px" /></a></li>
                     <li><a href=""><Image src="/icons/dev.svg" width="30px" height="30px" /></a></li>
                     <li><a href=""><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
+                    <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
                 </ul>
 
                 <footer className={styles.footer}>
