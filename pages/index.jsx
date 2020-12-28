@@ -103,21 +103,6 @@ const Index = () => {
                 </ul>
                 </div>
 
-        <div className={styles.message}>
-            <p>It's nice to have you here.</p>
-            <p>I am a hobbyist self-taugh developer from Cameroon.
-                <br/>
-                I code everyday on random stuff or my projects, because coding is fun for me.
-                <br/>
-                <p>You can reach out to me on Twitter - that's where i usually hangout.</p>
-            </p>
-            <p>I am an occasional Open Source contributor and maintainer.
-                <br/>
-                Fun fact : I write bugs, they are so cool they are called features.
-            </p>
-           
-        </div>
-
                     <hr className={styles.separator} />
 
                 <div>
