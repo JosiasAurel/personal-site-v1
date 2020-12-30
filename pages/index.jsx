@@ -105,6 +105,10 @@ const Index = () => {
                         <Image src="/icons/next.svg" width="40px" height="40px" />
                         <p>NextJS</p>
                     </li>
+                    <li>
+                        <Image src="/icons/react.svg" width="40px" height="40px" />
+                        <p>React</p>
+                    </li>
                 </ul>
                 </div>
 
