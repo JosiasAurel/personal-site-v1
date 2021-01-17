@@ -32,6 +32,7 @@ const Blog = () => {
             </div>
 
             <div>
+                <Post title="Creating a custom HTML element" link="creating-a-custom-html-element" />
                 <Post title="Free hosting services for developers" link="free-hosting-services-for-web-developers" />
                 <Post title="9 Useful apps for web developers" link="9-useful-apps-for-devs" />
                 <Post title="11 JavaScript Console Commands explained" link="14js-console-commands-explained" />
