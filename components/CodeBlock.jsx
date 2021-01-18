@@ -1,7 +1,7 @@
 import React, {PureComponent} from  "react"
 import PropTypes from "prop-types"
 import {Prism as SyntaxHighlighter} from "react-syntax-highlighter"
-import style from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark"
+import style from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark"
 //import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import styles from "../styles/codeblock.module.css"
 
