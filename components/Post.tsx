@@ -1,8 +1,13 @@
 import React, { FunctionComponent } from "react"
 import Link from "next/link"
 
-const Post: FunctionComponent = (props: { title: String, link: String }): JSX.Element => {
-    const { title, link } = props;
+type PostProps = {
+   title: String,
+   link: String
+}
+
+
+const Post: FunctionComponent = ({ title, link }: PostProps): JSX.Element => {
     return (
         <div className="container">
             <Link href={`/post/${link}`}>
