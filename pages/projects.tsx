@@ -35,6 +35,7 @@ const Projects: FunctionComponent = (): JSX.Element => {
 
                 <ProjectCard
                 name="Find more on my GitHub Profile"
+                photo="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/jos.png"
                 link="https://github.com/JosiasAurel?tab=repositories"
                 />
             </div>
