@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, FunctionComponent} from "react"
 import styles from "../styles/uses.module.css"
 import Header from "../components/header"
 import Head from "next/head"
 
-const Uses = () => {
+const Uses: FunctionComponent = (): JSX.Element => {
 
     return (
         <div>
