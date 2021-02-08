@@ -6,7 +6,7 @@ import { Card } from "@geist-ui/react"
 type ProjectProps = {
       name: String
       link: String
-      photo: String
+      photo: string
 }
 
 const ProjectCard: FunctionComponent<ProjectProps> = ({name, link, photo}): JSX.Element => {
