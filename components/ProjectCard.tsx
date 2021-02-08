@@ -5,7 +5,7 @@ import { Card } from "@geist-ui/react"
 
 type ProjectProps = {
       name: String
-      link: String
+      link: string
       photo: string
 }
 
