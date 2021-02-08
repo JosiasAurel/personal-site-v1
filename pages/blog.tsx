@@ -5,25 +5,10 @@ import styles from "../styles/blog.module.css"
 import Head from "next/head"
 
 const Blog: FunctionComponent = (): JSX.Element => {
-    const [colorMode, setColorMode] = useState("light")
-    const [theme, setTheme] = useState("")
-    const [icon, setIcon] = useState("/moon.svg")
-    
 
-    function toggleColorMode() {
-        if (colorMode === "dark") {
-            setTheme("")
-            setColorMode("light")
-        } else if  (theme === "") {
-            setColorMode("dark")
-            setTheme("{styles.dark}")
-            setIcon("/sun.svg")
-        }
-        return
-    }
     return (
-        <div className={(colorMode === "light") ? "" : (styles.dark) }>
-            <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+        <div>
+            <Header />
             <Head>
                 <title>Josias Aurel - Blog</title>
             </Head>
