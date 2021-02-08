@@ -7,7 +7,7 @@ type PostProps = {
 }
 
 
-const Post: FunctionComponent = ({ title, link }: PostProps): JSX.Element => {
+const Post: FunctionComponent<PostProps> = ({ title, link }): JSX.Element => {
     return (
         <div className="container">
             <Link href={`/post/${link}`}>
