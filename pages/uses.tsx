@@ -15,7 +15,7 @@ const Uses: FunctionComponent = (): JSX.Element => {
                 </title>
             </Head>
             <div>
-               <center> <h2>Tools</h2></center>
+               <h2 style={{textAlign: "center"}}>Tools</h2>
                 <br/>
                 <ul>
                     <li>PC</li>
