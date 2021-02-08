@@ -3,7 +3,13 @@ import Image from "next/image"
 import styles from "../styles/projectcard.module.css"
 import { Card } from "@geist-ui/react"
 
-const ProjectCard: FunctionComponent = ({name, link, photo}): JSX.Element => {
+type ProjectProps = {
+      name: String
+      link: String
+      photo: String
+}
+
+const ProjectCard: FunctionComponent<ProjectProps> = ({name, link, photo}): JSX.Element => {
     return (
         <div className={styles.card}>
             <Card hoverable>
