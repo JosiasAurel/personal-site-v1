@@ -1,8 +1,8 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 import styles from "../styles/header.module.css"
 import Link from "next/link"
 
-const Header = () => {
+const Header: FunctionComponent = (): JSX.Element => {
     return (
         <header className={styles.header}>
             <ul className={styles.pageLinks}>

@@ -1,7 +1,7 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 import Link from "next/link"
 
-const Post = ({ title, link }) => {
+const Post: FunctionComponent = ({ title, link }): JSX.Element => {
     return (
         <div className="container">
             <Link href={`/post/${link}`}>

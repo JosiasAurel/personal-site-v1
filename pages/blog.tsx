@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, FunctionComponent} from "react"
 import Header from "../components/header"
 import Post from "../components/Post"
 import styles from "../styles/blog.module.css"
 import Head from "next/head"
 
-const Blog = () => {
+const Blog: FunctionComponent = (): JSX.Element => {
     const [colorMode, setColorMode] = useState("light")
     const [theme, setTheme] = useState("")
     const [icon, setIcon] = useState("/moon.svg")

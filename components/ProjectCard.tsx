@@ -1,9 +1,9 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 import Image from "next/image"
 import styles from "../styles/projectcard.module.css"
 import { Card } from "@geist-ui/react"
 
-const ProjectCard = ({name, link, photo}) => {
+const ProjectCard: FunctionComponent = ({name, link, photo}): JSX.Element => {
     return (
         <div className={styles.card}>
             <Card hoverable>

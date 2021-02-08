@@ -1,4 +1,4 @@
-import React from "react"
+import React, {FunctionComponent} from "react"
 
 import Image from "next/image"
 import Head from "next/head"
@@ -9,7 +9,7 @@ import styles from "../styles/index.module.css"
 // import custom components
 import Header from "../components/header"
 
-const Index = () => {
+const Index: FunctionComponent = (): JSX.Element => {
     return (
         <div>
             <Head>
