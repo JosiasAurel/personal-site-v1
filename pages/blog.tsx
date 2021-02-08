@@ -13,7 +13,7 @@ const Blog: FunctionComponent = (): JSX.Element => {
                 <title>Josias Aurel - Blog</title>
             </Head>
             <div>
-                <center><h2>Here you will find cool blog posts.</h2></center>
+                <h2 style={{textAlign: "center"}}>Here you will find cool blog posts.</h2>
             </div>
 
             <div>
