@@ -5,3 +5,10 @@
     align-items: center;
     margin-top: 50vh;
 }
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

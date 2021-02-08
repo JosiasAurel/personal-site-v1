@@ -30,8 +30,8 @@ export default function PostTemplate({content, data}) {
         <div className={styles.post}>
             <div>
 	        <h1 className={styles.title}>{frontmatter.title}</h1>
-			<p>{frontmatter.date}</p>
-            <ul className={styles.tags}>
+			<p style={{textAlign: "center"}}>{frontmatter.date}</p>
+                <ul className={styles.tags}>
                 {tags.map(tag => {
                     return (
                     <li>{tag}</li>
@@ -47,9 +47,6 @@ export default function PostTemplate({content, data}) {
                 renderers={{code: CodeBlock}} />
        
          </div> 
-     <script type="text/javascript" data-cfasync="false" src="/ad.js" > </script>
-     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rocketstellar" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-
        </div>
          <center><p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p></center>
          </div> 

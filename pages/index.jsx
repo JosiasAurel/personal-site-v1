@@ -34,7 +34,6 @@ const Index = () => {
                     <hr className={styles.separator} />
 
                     <h2 style={{textAlign: "center", fontFamily: "arial", fontWeight: "lighter"}}>Technologies I work with</h2>
-
                 <div className={styles.techsContainer}>
                     <ul className={styles.techs}>
                     <li>
@@ -125,7 +124,6 @@ const Index = () => {
                     <li><a href="https://dev.to/josiasaurel"><Image src="/icons/dev.svg" width="30px" height="30px" /></a></li>
                     <li><a href="https://www.youtube.com/channel/UCLyEFauz2k4mnJYC5RxlDBQ"><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
                    <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
-                   <li><a href="https://hashnode.com/@JosiasAurel"><Image src="https://cdn.hashnode.com/res/hashnode/image/upload/v1592752137870/scHk9tTaA.png?auto=compress" width="30px" height="30px" /></a></li>
                 </ul>
 
                 <footer className={styles.footer}>

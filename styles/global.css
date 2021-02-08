@@ -45,9 +45,9 @@ em {
 }
 
 blockquote {
-    background-color: rgba(214, 214, 214, 0.432);
-    border-left: 1em solid hotpink;
-    padding: 01em;
+    background-color: rgba(214, 214, 214, 0.274);
+    border-left: 1em solid rgb(6, 238, 255);
+    padding: 1em;
     border-radius: 4px;
 }
 
