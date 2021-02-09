@@ -1,28 +1,13 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, FunctionComponent} from "react"
 import styles from "../styles/uses.module.css"
 import Header from "../components/header"
 import Head from "next/head"
 
-const Uses = () => {
-    const [colorMode, setColorMode] = useState("light")
-    const [theme, setTheme] = useState("")
-    const [icon, setIcon] = useState("/moon.svg")
-    
+const Uses: FunctionComponent = (): JSX.Element => {
 
-    function toggleColorMode() {
-        if (colorMode === "dark") {
-            setTheme("")
-            setColorMode("light")
-        } else if  (theme === "") {
-            setColorMode("dark")
-            setTheme("{styles.dark}")
-            setIcon("/sun.svg")
-        }
-        return
-    }
     return (
-        <div className={(colorMode === "light") ? "" : (styles.dark) }>
-            <Header color={colorMode} icon={icon} changeHandler={toggleColorMode} />
+        <div>
+            <Header />
 
             <Head>
                 <title>
@@ -30,7 +15,7 @@ const Uses = () => {
                 </title>
             </Head>
             <div>
-               <center> <h2>Tools</h2></center>
+               <h2 style={{textAlign: "center"}}>Tools</h2>
                 <br/>
                 <ul>
                     <li>PC</li>
