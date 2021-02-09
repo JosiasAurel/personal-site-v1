@@ -25,7 +25,7 @@ const Blog: FunctionComponent = (): JSX.Element => {
                 <Post title="Install VSCode on Android" link="install-vscode-on-android" />
                 <Post title="How to create React app without create-react-app CLI" link="how-to-create-react-app-without-the-cra-cli" />
                 <Post title="JavaScript Array Methods" link="js-array-methods" />
-                <Post title="Thé difference between String and string in TypeScript" link="the-difference-between-string-ts" />
+                <Post title="The difference between String and string in TypeScript" link="the-difference-between-string-ts" />
             </div>
         </div>
     )
