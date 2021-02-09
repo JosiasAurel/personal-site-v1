@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react"
 import Link from "next/link"
 
-const Post: FunctionComponent = ({ title, link }): JSX.Element => {
+const Post: FunctionComponent = ({title, link}): JSX.Element => {
     return (
         <div className="container">
-            <Link href={`/post/${link}`}>
+            <Link href={`/post/$link}`}>
             <h1>{title}</h1>
             </Link>
             <style jsx>{`
