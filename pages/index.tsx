@@ -20,16 +20,20 @@ const Index: FunctionComponent = (): JSX.Element => {
             <Header />
             <div className={styles.page}>
                 
-                <div className={styles.user}>
+                <main>
+                    <div className={styles.user}>
                     <h1 className={styles.name}>Josias Aurel ▪ </h1>
                     <Image width="200px" height="200px" className={styles.profile} src="/josias.jpg" />
                 </div>
 
-                <p className={styles.present}>
+                
+                    <p className={styles.present}>
                     I am a self-taught full-stack developer also in Game, Machine Learning and Mobile development from cameroon. <br/>
                     I love to code for fun and experiment. <br/>
                     I love to learn new things and build projects with my knowledge. <br/>
                 </p>
+                </main>
+              
 
                     <hr className={styles.separator} />
 
