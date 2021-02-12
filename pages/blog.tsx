@@ -1,4 +1,4 @@
-import React, {useState, useEffect, FunctionComponent} from "react"
+import React, { FunctionComponent } from "react"
 import Header from "../components/header"
 import Post from "../components/Post"
 import styles from "../styles/blog.module.css"
@@ -8,7 +8,7 @@ const Blog: FunctionComponent = (): JSX.Element => {
 
     return (
         <div>
-            <Header />
+            <nav><Header /></nav>
             <Head>
                 <title>Josias Aurel - Blog</title>
             </Head>
@@ -16,7 +16,8 @@ const Blog: FunctionComponent = (): JSX.Element => {
                 <h2 style={{textAlign: "center"}}>Here you will find cool blog posts.</h2>
             </div>
 
-            <div>
+            <main>
+                <div>
                 <Post title="Creating a custom HTML element" link="creating-a-custom-html-element" />
                 <Post title="Free hosting services for developers" link="free-hosting-services-for-web-developers" />
                 <Post title="9 Useful apps for web developers" link="9-useful-apps-for-devs" />
@@ -26,6 +27,7 @@ const Blog: FunctionComponent = (): JSX.Element => {
                 <Post title="How to create React app without create-react-app CLI" link="how-to-create-react-app-without-the-cra-cli" />
                 <Post title="JavaScript Array Methods" link="js-array-methods" />
             </div>
+            </main>
         </div>
     )
 }

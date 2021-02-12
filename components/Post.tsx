@@ -16,11 +16,15 @@ const Post: FunctionComponent<PostProps> = ({title, link}: PostProps): JSX.Eleme
                 .container {
     background-color: transparent;
     margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 1%;
 }
 
+.container:hover {
+    background-color: #14ffe93d;
+    border-radius: 8px;
+}
 h1 {
     color: black;
 }

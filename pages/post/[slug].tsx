@@ -7,6 +7,10 @@ import Header from "../../components/header"
 import React, {useState, useEffect} from "react"
 import { formatWithValidation } from 'next/dist/next-server/lib/utils'
 
+type PostPageProps = {
+    content: string,
+    data: any
+}
 
 export default function PostTemplate({content, data}) {
         let frontmatter = data
@@ -15,7 +19,7 @@ export default function PostTemplate({content, data}) {
     return (
 
          <div>
-             <Header />
+             <nav><Header /></nav>
              <Head>
     <title>{frontmatter.title}</title>
     <meta name="og:image" content={shower} />
@@ -48,7 +52,7 @@ export default function PostTemplate({content, data}) {
        
          </div> 
        </div>
-         <center><p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p></center>
+         <p style={{textAlign: "center"}}>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p>
          </div> 
         )
 }
