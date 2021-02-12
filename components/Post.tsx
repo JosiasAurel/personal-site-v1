@@ -1,9 +1,13 @@
 import React, { FunctionComponent } from "react"
 import Link from "next/link"
 
-<<<<<<< HEAD
-const Post: FunctionComponent = ({title, link}): JSX.Element => {
-=======
+type PostProps = {
+    title: string,
+    link: string
+}
+
+const Post: FunctionComponent<PostProps> = ({title, link}: PostProps): JSX.Element => {
+
 type PostProps = {
    title: String,
    link: String
@@ -11,7 +15,7 @@ type PostProps = {
 
 
 const Post: FunctionComponent<PostProps> = ({ title, link }): JSX.Element => {
->>>>>>> 4ae6c4db8332d4dc9725af9ccfcd2c5efc894ab9
+
     return (
         <div className="container">
             <Link href={`/post/$link}`}>
