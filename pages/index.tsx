@@ -17,7 +17,7 @@ const Index: FunctionComponent = (): JSX.Element => {
                 <meta name="title" content="Josias Aurel" />
                 <meta name="og:image" content="https://raw.githubusercontent.com/JosiasAurel/josiasaureldev/master/public/og.PNG?token=ALN24EAEFPPAFJFPKZDNJHC75IB3U"/>
             </Head>
-            <Header />
+            <nav><Header /></nav>
             <div className={styles.page}>
                 
                 <main>
@@ -39,7 +39,8 @@ const Index: FunctionComponent = (): JSX.Element => {
 
                     <h2 style={{textAlign: "center", fontFamily: "arial", fontWeight: "lighter"}}>Technologies I work with</h2>
                 
-                <div className={styles.techsContainer}>
+                <section>
+                    <div className={styles.techsContainer}>
                     <ul className={styles.techs}>
                     <li>
                         <Image src="/icons/html.svg" width="40px" height="40px" />
@@ -115,9 +116,11 @@ const Index: FunctionComponent = (): JSX.Element => {
                     </li>
                 </ul>
                 </div>
+                </section>
                     <hr className={styles.separator} />
 
-                <div>
+                <section>
+                    <div>
                     <p style={{fontSize:"20px", textAlign: "center"}}>Interested to work with me ? Send me an email at <a style={{color:"grey"}} href="mailto:ndjosiasaurel@gmail.com">ndjosiasaurel@gmail.com</a></p>
                 </div>
 
@@ -129,6 +132,7 @@ const Index: FunctionComponent = (): JSX.Element => {
                     <li><a href="https://www.youtube.com/channel/UCLyEFauz2k4mnJYC5RxlDBQ"><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
                    <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
                 </ul>
+                </section>
 
                 <footer className={styles.footer}>
                     <p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p>
