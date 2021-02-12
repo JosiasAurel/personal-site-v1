@@ -11,7 +11,7 @@ import Header from "../components/header"
 
 const Index: FunctionComponent = (): JSX.Element => {
     return (
-        <div>
+        <>
             <Head>
                 <meta name="og:title" content="Josias Aurel" />
                 <meta name="title" content="Josias Aurel" />
@@ -34,6 +34,7 @@ const Index: FunctionComponent = (): JSX.Element => {
                     <hr className={styles.separator} />
 
                     <h2 style={{textAlign: "center", fontFamily: "arial", fontWeight: "lighter"}}>Technologies I work with</h2>
+                
                 <div className={styles.techsContainer}>
                     <ul className={styles.techs}>
                     <li>
@@ -110,7 +111,6 @@ const Index: FunctionComponent = (): JSX.Element => {
                     </li>
                 </ul>
                 </div>
-
                     <hr className={styles.separator} />
 
                 <div>
@@ -130,7 +130,7 @@ const Index: FunctionComponent = (): JSX.Element => {
                     <p>&copy; {new Date().getFullYear()} Josias Aurel. Made with &#x1f497;</p>
                 </footer>
             </div>
-        </div>
+        </>
     )
 }
 

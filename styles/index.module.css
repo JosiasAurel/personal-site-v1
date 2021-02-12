@@ -34,12 +34,18 @@
     border-bottom: 1px dotted grey;
 }
 
-
+.techsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1.7em;
+}
 
 .techs {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 
