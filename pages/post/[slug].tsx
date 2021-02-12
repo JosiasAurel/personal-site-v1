@@ -4,15 +4,15 @@ import ReactMarkdown from 'react-markdown'
 import styles from "../../styles/post.module.css"
 import Head from "next/head"
 import Header from "../../components/header"
-import React, {useState, useEffect} from "react"
-import { formatWithValidation } from 'next/dist/next-server/lib/utils'
+import React from "react"
+import { NextPage } from "next"
 
-type PostPageProps = {
+interface Props {
     content: string,
     data: any
 }
 
-export default function PostTemplate({content, data}) {
+const PostTemplate: NextPage<Props> = ({content, data}): JSX.Element => {
         let frontmatter = data
         let shower = frontmatter.og
         let tags = frontmatter.tags
@@ -59,10 +59,10 @@ export default function PostTemplate({content, data}) {
 
 PostTemplate.getInitialProps = async (ctx) => {
     const { slug } = ctx.query
-    
-    const content = await import(`../../content/${slug}.md`)
-    
+    const content = await import(`../../content/${ slug }.md`)
     const data = matter(content.default)
     //console.log(data)
     return { ...data }
 }
+
+export default PostTemplate
