@@ -14,20 +14,20 @@ const Index: FunctionComponent = (): JSX.Element => {
         <>
             <Head>
 <title>Josias Aurel ▪</title>
-<meta name="title" content="Josias Aurel ▪">
-<meta name="description" content="Self-Taught Hobbyist Developer from Cameroon">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://josiasaurel.tech/">
-<meta property="og:title" content="Josias Aurel ▪">
-<meta property="og:description" content="I am full stack software developer">
-<meta property="og:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png">
+<meta name="title" content="Josias Aurel ▪" />
+<meta name="description" content="Self-Taught Hobbyist Developer from Cameroon" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://josiasaurel.tech/" />
+<meta property="og:title" content="Josias Aurel ▪" />
+<meta property="og:description" content="I am full stack software developer" />
+<meta property="og:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png" />
 
 
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://josiasaurel.tech/">
-<meta property="twitter:title" content="Josias Aurel ▪">
-<meta property="twitter:description" content="Developer">
-<meta property="twitter:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png">
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://josiasaurel.tech/" />
+<meta property="twitter:title" content="Josias Aurel ▪" />
+<meta property="twitter:description" content="Developer" />
+<meta property="twitter:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png" />
             </Head>
             <nav><Header /></nav>
             <div className={styles.page}>
