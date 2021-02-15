@@ -13,9 +13,22 @@ const Index: FunctionComponent = (): JSX.Element => {
     return (
         <>
             <Head>
-                <meta name="og:title" content="Josias Aurel" />
-                <meta name="title" content="Josias Aurel" />
-                <meta name="og:image" content="https://raw.githubusercontent.com/JosiasAurel/josiasaureldev/master/public/og.PNG?token=ALN24EAEFPPAFJFPKZDNJHC75IB3U"/>
+<title>Josias Aurel ▪</title>
+<meta name="title" content="Josias Aurel ▪">
+<meta name="description" content="Self-Taught Hobbyist Developer from Cameroon">
+{ /* open graph & facebook */
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://josiasaurel.tech/">
+<meta property="og:title" content="Josias Aurel ▪">
+<meta property="og:description" content="I am full stack software developer">
+<meta property="og:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png">
+
+{/* twitter */ }
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://josiasaurel.tech/">
+<meta property="twitter:title" content="Josias Aurel ▪">
+<meta property="twitter:description" content="Developer">
+<meta property="twitter:image" content="https://raw.githubusercontent.com/JosiasAurel/JosiasAurel/master/Screenshot_2021-02-15-19-00-14-0757216092.png">
             </Head>
             <nav><Header /></nav>
             <div className={styles.page}>
