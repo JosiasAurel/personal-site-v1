@@ -2,6 +2,7 @@
 title: Create and serve a simple machine learning model
 tags: [Machine Learning, Python, API]
 date: 27/03/2021
+og: https://i.ibb.co/28pfnxS/Screenshot-2021-03-27-12-51-42-1843027814.png
 ---
 
 In this tutorial, we are going to create and deploy a simple machine learning model. 
