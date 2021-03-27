@@ -114,7 +114,7 @@ if __name__ == "__main__":
 	app.run(debug=True)
 ```
 First, we are importing models utility from keras and then Flask.
-We can load a saved model using the modeld utility using the load_model method. It takes a *filepath* argument specifying the path to which the saved model is.
+We can load a saved model using the models utility using the load_model method. It takes a *filepath* argument specifying the path to which the saved model is.
 
 Next is we create a route which accpet *POST* requests.
 Inside the function, we get the data sent through the request. We will get bytes, so we cast it to an integer.
@@ -125,9 +125,11 @@ To test your API, we are going to write a simple python program to do so.
 Open a file called *test.py* and add the following code in it.
 
 ```python
-import requests                         import sys
+import requests
+import sys
 
-value = sys.argv[1]                                                                 res = requests.post("http://localhost:5000/predict", value)
+value = sys.argv[1]
+res = requests.post("http://localhost:5000/predict", value)
 
 print(res.content)
 ```
@@ -136,7 +138,7 @@ Testing it
 ```shell
 python test.py 9
 ```
-I get *b'19.115118'*
+I get *b'19.115118'*. Yay it works!
 
 You have reached the end of this tutorial.
 I hope you enjoyed building and serving this simple model.
@@ -144,3 +146,5 @@ I hope you enjoyed building and serving this simple model.
 Feel free to play with the API with different values.
 
 Final code [here](https://github.com/JosiasAurel/ml-deploy-sample)
+
+If you liked this, make sure to share and [follow me on twitter](https://twitter.com/JosiasWing?s=09) for more of such.
