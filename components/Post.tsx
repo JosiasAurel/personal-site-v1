@@ -9,7 +9,7 @@ type PostProps = {
 const Post: FunctionComponent<PostProps> = ({title, link}: PostProps): JSX.Element => {
     return (
         <div className="container">
-            <Link href={`/post/$link}`}>
+            <Link href={`/post/${link}`}>
             <h1>{title}</h1>
             </Link>
             <style jsx>{`
