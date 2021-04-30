@@ -10,6 +10,12 @@ const Projects: FunctionComponent = (): JSX.Element => {
             <h1 style={{textAlign: "center"}}>Find Projects I have worked on</h1>
             <div className={styles.projectContainer}>
                 <ProjectCard 
+                name="LinksBook"
+                photo="/https://i.ibb.co/kgmTdtV/tips.png"
+                link="https://linksbook.me/"
+                 />
+                
+                <ProjectCard 
                 name="Octo UI"
                 photo="/octoui.PNG"
                 link="https://octodemo.josiasaurel.tech"
