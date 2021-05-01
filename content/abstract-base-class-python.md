@@ -116,7 +116,7 @@ class Orange(Fruit):
 
 my_orange = Orange()
 ```
-If we run the above code, we don#t get an error again, that is because we can now get the taste of our fruit.
+If we run the above code, we don't get an error again, that is because we can now get the taste of our fruit.
 
 Your final code should look similar to this 
 
@@ -180,7 +180,7 @@ my_orange = Orange()
 
 ```
 
-We have probably just scratched the surface of ABC on python. I recommend you to go through Python documentation to learn more about them [here]()
+We have probably just scratched the surface of ABC on python. I recommend you to go through Python documentation to learn more about them [here](https://docs.python.org/3/library/abc.html)
 
 I hope you enjoyed reading this post as much as i did writing it.
 
