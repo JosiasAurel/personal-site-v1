@@ -17,4 +17,4 @@ In order to start the development server, run ```npm run dev```. The server will
 
 In order to start the server for production, run ```npm run start```
 
-Copyright 2020 Josias Aurel
+By Josias Aurel
