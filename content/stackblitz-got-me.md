@@ -77,6 +77,6 @@ Wanna see [another one](https://blog.stackblitz.com/img/v2/1.webp) ?
 
 You have reached the end ! I just feel so much hype about this. This is one step foward to improvement and i think this might help alot.
 
-I will be playing around with emscripten and WASM to try a similar thing but no guarantee tho ;)
+I will be playing around with emscripten and WASM to try a similar thing and take gaming to the next level but no guarantee tho ;)
 
 Thanks for reading.
