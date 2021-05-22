@@ -43,7 +43,7 @@ They are :
 
 ## Develop faster, safer and happier 😁
 
-WebContainer are easy to startup and are fast to setup with a fey *npm install*s.
+WebContainer are easy to startup and are fast to setup with a few *npm install*s.
 
 WebContainers are way more secure than our local development environment as they run in browser security sandbox.
 
@@ -66,9 +66,9 @@ Bye bye node_modules - they do not depend on server resources
 The project is not open source... yet!
 They have not provided much information about how this works - still trying to reverse engineer it but here is what i can tell you.
 
-- They rely on service workers and current browser APIs like _File System API_ to.
+- They rely on service workers and current browser APIs like _File System API_ too.
 - They use some engine worker and service worker where they establish their virtualized network stack
-- They are making use of WASM to for some parts - to deal with building and most parts requiring much performance
+- They are making use of WASM for some parts - to deal with building and most parts requiring much performance
 - The environment is PWA -> a huge benefit making it easy to work offline - all the resources are 'cached'
 
 - They are simply awesome, wanna see a demo ? I just gave it a try, see me playing with small node logs [here](https://twitter.com/JosiasWing/status/1395913263435685889?s=20) lol
