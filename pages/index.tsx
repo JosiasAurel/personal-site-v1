@@ -10,6 +10,80 @@ import styles from "../styles/index.module.css"
 import Header from "../components/header"
 
 const Index: FunctionComponent = (): JSX.Element => {
+    const iconNames: Array<{ icon: string, name: string }> = [
+        {
+            icon: "/icons/html.svg",
+            name: "HTML"
+        },
+{
+            icon: "/icons/css.svg",
+            name: "CSS"
+        },
+{
+            icon: "/icons/js.svg",
+            name: "JavaScript"
+        },
+        {
+            icon: "/icons/ts.svg",
+            name: "TypeScript"
+        },
+        {
+            icon: "/icons/python.svg",
+            name: "Python"
+        },
+{
+            icon: "/icons/node.svg",
+            name: "NodeJS"
+        },
+{
+            icon: "/icons/gql.svg",
+            name: "GraphQL"
+        },
+{
+            icon: "/icons/mongo.svg",
+            name: "MongoDB"
+        },
+{
+            icon: "/icons/git.svg",
+            name: "Git"
+        },
+{
+            icon: "/icons/apollo.svg",
+            name: "Apollo"
+        },
+{
+            icon: "/icons/do.svg",
+            name: "DigitalOcean"
+        },
+{
+            icon: "/icons/vercel.svg",
+            name: "Vercel"
+        },
+{
+            icon: "/icons/heroku.svg",
+            name: "Heroku"
+        },
+{
+            icon: "/icons/flask.svg",
+            name: "Flask"
+        },
+{
+            icon: "/icons/django.svg",
+            name: "Django"
+        },
+{
+            icon: "/icons/godot.svg",
+            name: "Godot"
+        },
+{
+            icon: "/icons/next.svg",
+            name: "NextJS"
+        },
+{
+            icon: "/icons/react.svg",
+            name: "React"
+        }
+    ];
     return (
         <>
             <Head>
@@ -35,7 +109,7 @@ const Index: FunctionComponent = (): JSX.Element => {
                 <main>
                     <div className={styles.user}>
                     <h1 className={styles.name}>Josias Aurel ▪ </h1>
-                    <Image width="200px" height="200px" className={styles.profile} src="/josias.jpg" />
+                    <Image width={200} height={200} className={styles.profile} src="/josias.jpg" alt="josias" />
                 </div>
 
                 
@@ -54,78 +128,12 @@ const Index: FunctionComponent = (): JSX.Element => {
                 <section>
                     <div className={styles.techsContainer}>
                     <ul className={styles.techs}>
+                   {iconNames.map(({ icon, name}) => (
                     <li>
-                        <Image src="/icons/html.svg" width="40px" height="40px" />
-                        <p>HTML</p>
+                        <Image src={icon} alt={name} width={40} height={40} />
+                        <p>{name}</p>
                     </li>
-                    <li>
-                        <Image src="/icons/css.svg" width="40px" height="40px" />
-                        <p>CSS</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/js.svg" width="40px" height="40px" />
-                        <p>JavaScript</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/ts.svg" width="40px" height="40px" />
-                        <p>TypeScript</p>
-                    </li>
-                    <li>
-                        <Image src="/dev/python.png" width="40px" height="40px" />
-                        <p>Python</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/node.svg" width="40px" height="40px" />
-                        <p>NodeJS</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/gql.svg" width="40px" height="40px" />
-                        <p>GraphQL</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/mongo.svg" width="40px" height="40px" />
-                        <p>Mongo DB</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/git.svg" width="40px" height="40px" />
-                        <p>Git</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/apollo.svg" width="40px" height="40px" />
-                        <p>Apollo</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/do.svg" width="40px" height="40px" />
-                        <p>DigitalOcean</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/vercel.svg" width="40px" height="40px" />
-                        <p>Vercel</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/heroku.svg" width="40px" height="40px" />
-                        <p>Heroku</p>
-                    </li>
-                    <li>
-                        <Image src="/dev/flask.png" width="40px" height="40px" />
-                        <p>Flask</p>
-                    </li>
-                    <li>
-                        <Image src="/dev/django.png" width="40px" height="40px" />
-                        <p>Django</p>
-                    </li>
-                    <li>
-                        <Image src="/dev/godot.png" width="40px" height="40px" />
-                        <p>Godot</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/next.svg" width="40px" height="40px" />
-                        <p>NextJS</p>
-                    </li>
-                    <li>
-                        <Image src="/icons/react.svg" width="40px" height="40px" />
-                        <p>React</p>
-                    </li>
+                   ))} 
                 </ul>
                 </div>
                 </section>
@@ -137,12 +145,12 @@ const Index: FunctionComponent = (): JSX.Element => {
                 </div>
 
                 <ul className={styles.socials}>
-                    <li><a href="https://twitter.com/JosiasWing?s=09"><Image src="/icons/twitterlogo.svg" width="30px" height="30px" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/josias-aurel-dev-io/"><Image src="/icons/In.svg" width="30px" height="30px" /></a></li>
-                    <li><a href="https://github.com/JosiasAurel"><Image src="/icons/github.svg" width="30px" height="30px" /></a></li>
-                    <li><a href="https://dev.to/josiasaurel"><Image src="/icons/dev.svg" width="30px" height="30px" /></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCLyEFauz2k4mnJYC5RxlDBQ"><Image src="/icons/yt.svg" width="30px" height="30px" /></a></li>
-                   <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width="30px" height="30px" /></a></li>
+                    <li><a href="https://twitter.com/JosiasWing?s=09"><Image src="/icons/twitterlogo.svg" width={30} height={30} alt="twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/josias-aurel-dev-io/"><Image src="/icons/In.svg" width={30} height={30} alt="linkedin" /></a></li>
+                    <li><a href="https://github.com/JosiasAurel"><Image src="/icons/github.svg" width={30} height={30} alt="github" /></a></li>
+                    <li><a href="https://dev.to/josiasaurel"><Image src="/icons/dev.svg" width={30} height={30} alt="dev.to" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLyEFauz2k4mnJYC5RxlDBQ"><Image src="/icons/yt.svg" width={30} height={30} alt="youtube" /></a></li>
+                   <li><a href="https://josiasaurel.itch.io"><Image src="/itchio.png" width={30} height={30} alt="itchio" /></a></li>
                 </ul>
                 </section>
 

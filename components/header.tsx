@@ -8,12 +8,12 @@ const Header: FunctionComponent = (): JSX.Element => {
             <ul className={styles.pageLinks}>
                 <li>
                     <Link href="/">
-                        <a>Start</a>
+                        Start
                     </Link>
                 </li>
-                <li><Link href="/uses"><a>Uses</a></Link></li>
-                <li><Link href="/blog"><a>Blog</a></Link></li>
-                <li> <Link href="/projects"><a>Projects</a></Link></li>
+                <li><Link href="/uses">Uses</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li> <Link href="/projects">Projects</Link></li>
             </ul>
 
             <a className={styles.twitterMe} href="https://twitter.com/JosiasWing?s=09">
