@@ -1,6 +1,6 @@
 ---
 title: Handling Browser Load Events in JavaScript
-date:  28/11/2020
+date: 28/11/2020
 tags: [JavaScript, HTML, CSS]
 og: /postdemo.png
 ---

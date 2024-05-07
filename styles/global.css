@@ -1,19 +1,17 @@
-
 /* global styles */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 
 * {
-    box-sizing: border-box;
-    cursor: context-menu;
-    transition: 0.2s;
+  box-sizing: border-box;
+  cursor: context-menu;
+  transition: 0.2s;
 }
 
-
 body {
-    background-color: white;
-    margin: 0;
-    font-family: 'IBM Plex Mono', arial;
+  background-color: white;
+  margin: 0;
+  font-family: "IBM Plex Mono", arial;
 }
 
 html {
@@ -22,43 +20,45 @@ html {
 
 /* style scrollbar */
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    color: teal;
+  text-decoration: none;
+  color: teal;
 }
 
 ul {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 ::selection {
-    background-color: turquoise;
-    color: white;
+  background-color: turquoise;
+  color: white;
 }
 
 em {
-    background-color: rgba(248, 245, 47, 0.541);
-    
+  background-color: rgba(248, 245, 47, 0.541);
 }
 
 blockquote {
-    background-color: rgba(214, 214, 214, 0.274);
-    border-left: 1em solid rgb(6, 238, 255);
-    padding: 1em;
-    border-radius: 4px;
+  background-color: rgba(214, 214, 214, 0.274);
+  border-left: 1em solid rgb(6, 238, 255);
+  padding: 1em;
+  border-radius: 4px;
 }
 
 img {
-    max-width: 70vw;
+  max-width: 70vw;
 }
 
-h1, h2, h3, p {
-    word-wrap: break-word;
+h1,
+h2,
+h3,
+p {
+  word-wrap: break-word;
 }
 
 .color {
-    color: black;
+  color: black;
 }

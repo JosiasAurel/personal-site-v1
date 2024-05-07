@@ -1,18 +1,18 @@
-import { ApolloServer, gql } from 'apollo-server-micro'
+import { ApolloServer, gql } from "apollo-server-micro";
 
 // This data will be returned by our test endpoint
 const products = [
   {
     id: 1,
-    name: 'Cookie',
+    name: "Cookie",
     price: 300,
   },
   {
     id: 2,
-    name: 'Brownie',
+    name: "Brownie",
     price: 350,
   },
-]
+];
 
 // Construct a schema using GraphQL schema language
 const typeDefs = gql`
@@ -25,25 +25,25 @@ const typeDefs = gql`
   type Query {
     products: [Product]
   }
-`
+`;
 
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
     products: () => {
-      return products
+      return products;
     },
   },
-}
+};
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
 export default server.createHandler({
-  path: '/api/graphql',
-})
+  path: "/api/graphql",
+});
 
 export const config = {
   api: {
     bodyParser: false,
   },
-}
+};

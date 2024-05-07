@@ -1,22 +1,21 @@
 .tools {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  list-style-type: none;
 }
 
 .tool {
-    max-width: 30%;
+  max-width: 30%;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
-
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
 }
